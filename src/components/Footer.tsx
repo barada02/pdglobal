@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -20,9 +21,8 @@ export default function Footer() {
         <div className={styles.grid}>
           {/* Company Intro column */}
           <div className={styles.infoCol}>
-            <Link href="/" className={styles.logo}>
-              <span className={styles.logoText}>PD</span>
-              <span className={styles.logoSub}>GLOBAL</span>
+            <Link href="/" className={styles.logo} aria-label="Performance Dimensions Global — Home">
+              <Logo variant="full" className={styles.logoMark} />
             </Link>
             <p className={styles.description}>
               Performance Dimensions Global (PDG) is a People-science based global Talent and Organization Effectiveness consulting firm.

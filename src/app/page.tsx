@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
@@ -64,7 +65,18 @@ export default function Home() {
                   <p className={styles.quoteText}>
                     &ldquo;Change is not a constant, it is accelerating&rdquo;
                   </p>
-                  <p className={styles.quoteAuthor}>— Himank Priyadarshi, Ph.D.</p>
+                  <div className={styles.quoteAuthorRow}>
+                    <span className={styles.quoteAvatar}>
+                      <Image
+                        src="/founder-square.jpg"
+                        alt="Himank Priyadarshi, Ph.D."
+                        fill
+                        sizes="36px"
+                        className={styles.quoteAvatarImg}
+                      />
+                    </span>
+                    <p className={styles.quoteAuthor}>Himank Priyadarshi, Ph.D. — Founder & Principal Consultant</p>
+                  </div>
                 </div>
 
                 <div className={styles.heroActions}>

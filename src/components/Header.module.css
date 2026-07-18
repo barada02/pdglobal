@@ -40,11 +40,35 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: 0.65rem;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.scrolled .logo {
+  height: 34px;
+}
+
+.logoMark {
+  height: 100%;
+  transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoWordmark {
+  display: flex;
+  align-items: baseline;
   gap: 0.25rem;
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .logoWordmark {
+    display: none;
+  }
 }
 
 .logoText {

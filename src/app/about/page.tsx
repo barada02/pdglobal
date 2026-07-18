@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
@@ -149,10 +150,15 @@ export default function About() {
           <div className="container">
             <div className={styles.bioGrid}>
               <Reveal as="div" className={styles.bioLeft}>
-                <div className={styles.avatarPlaceholder}>
-                  <div className={styles.avatarInner}>
-                    <span className={styles.avatarInitials}>HP</span>
-                  </div>
+                <div className={styles.bioPhotoFrame}>
+                  <Image
+                    src="/founder-portrait.jpg"
+                    alt="Himank Priyadarshi, Ph.D. — Founder & Principal Consultant, Performance Dimensions Global"
+                    fill
+                    sizes="(max-width: 900px) 100vw, 380px"
+                    className={styles.bioPhoto}
+                    priority
+                  />
                 </div>
                 <div className={styles.bioMeta}>
                   <h3 className={styles.founderName}>Himank Priyadarshi, Ph.D.</h3>

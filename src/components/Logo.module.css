@@ -1,0 +1,28 @@
+.logo {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: auto;
+}
+
+.img {
+  object-fit: contain;
+  object-position: left center;
+  transition: opacity 0.3s ease;
+}
+
+.navy {
+  opacity: 1;
+}
+
+.white {
+  opacity: 0;
+}
+
+:global([data-theme="dark"]) .navy {
+  opacity: 0;
+}
+
+:global([data-theme="dark"]) .white {
+  opacity: 1;
+}

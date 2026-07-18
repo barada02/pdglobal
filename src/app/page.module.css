@@ -127,6 +127,26 @@
   margin-bottom: 0.5rem;
 }
 
+.quoteAuthorRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.quoteAvatar {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px var(--card-border);
+}
+
+.quoteAvatarImg {
+  object-fit: cover;
+}
+
 .quoteAuthor {
   font-size: 0.85rem;
   color: var(--text-muted);

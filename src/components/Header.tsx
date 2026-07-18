@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "@/components/Logo";
 import styles from "./Header.module.css";
 
 export default function Header() {
@@ -42,9 +43,12 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logo}>
-          <span className={styles.logoText}>PD</span>
-          <span className={styles.logoSub}>GLOBAL</span>
+        <Link href="/" className={styles.logo} aria-label="Performance Dimensions Global — Home">
+          <Logo variant="icon" priority className={styles.logoMark} />
+          <span className={styles.logoWordmark}>
+            <span className={styles.logoText}>PD</span>
+            <span className={styles.logoSub}>GLOBAL</span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
