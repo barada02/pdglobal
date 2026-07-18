@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://www.pdglobal.net";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/about", "/services", "/approach", "/insights", "/contact"];
+  const routes = ["", "/about", "/founder", "/services", "/approach", "/insights", "/contact"];
 
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,

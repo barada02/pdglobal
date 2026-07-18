@@ -145,7 +145,7 @@ export default function Home() {
                   We bring fresh perspectives and deep domain expertise grounded in rigorous research, benchmarks, and best-in-class case studies.
                 </p>
                 <Link href="/about" className={styles.textLink}>
-                  Learn more about our vision and values &rarr;
+                  Learn more about our vision and values <span className="arrow">&rarr;</span>
                 </Link>
               </Reveal>
             </div>

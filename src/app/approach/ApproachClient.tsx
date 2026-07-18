@@ -198,7 +198,7 @@ export default function ApproachClient() {
                     disabled={activePhase === phases.length - 1}
                     className={styles.navBtn}
                   >
-                    Next Phase &rarr;
+                    Next Phase <span className="arrow">&rarr;</span>
                   </button>
                 </div>
               </div>

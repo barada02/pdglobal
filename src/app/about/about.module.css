@@ -310,3 +310,23 @@
   font-size: 1.05rem;
   line-height: 1.6;
 }
+
+.knowMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: flex-start;
+  background: var(--primary);
+  color: var(--text-inverse);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  transition: var(--transition-smooth);
+}
+
+.knowMoreBtn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}

@@ -111,6 +111,17 @@ button, input, select, textarea {
   background: var(--primary);
 }
 
+/* Animated arrow glyph used on "know more" / "next" style links & buttons */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover .arrow,
+button:hover .arrow {
+  transform: translateX(2px) scale(1.35);
+}
+
 /* Subtle background glowing elements */
 .glowing-bg {
   position: absolute;
