@@ -4,8 +4,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import OrgNetworkVisual from "@/components/OrgNetworkVisual";
-import EditorialImage from "@/components/EditorialImage";
+import HeroParticles from "@/components/HeroParticles";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -48,6 +47,8 @@ export default function Home() {
 
         {/* Hero Section */}
         <section className={styles.heroSection}>
+          <HeroParticles className={styles.heroParticles} />
+          <div className={styles.heroOverlay} aria-hidden="true" />
           <div className="container">
             <div className={styles.heroGrid}>
               <Reveal className={styles.heroContent}>
@@ -86,22 +87,6 @@ export default function Home() {
                   <Link href="/contact" className={styles.secondaryButton}>
                     Get in Touch
                   </Link>
-                </div>
-              </Reveal>
-
-              <Reveal delay={150} className={styles.heroVisual}>
-                <div className={styles.heroVisualStack}>
-                  <div className={styles.heroNetworkAccent}>
-                    <OrgNetworkVisual variant="hero" />
-                  </div>
-                  <EditorialImage
-                    src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?q=80&w=1600&auto=format&fit=crop"
-                    alt="Executive leadership team collaborating in a strategy session"
-                    aspect="4/3"
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    className={styles.heroImage}
-                  />
                 </div>
               </Reveal>
             </div>
