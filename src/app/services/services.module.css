@@ -1,0 +1,347 @@
+.main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 6rem;
+}
+
+/* Hero Section */
+.hero {
+  padding: 6rem 0 3rem 0;
+  text-align: center;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Tabs Section */
+.tabsSection {
+  padding: 2rem 0 4rem 0;
+}
+
+.tabHeaders {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 950px) {
+  .tabHeaders {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tabHeaders {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tabBtn {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+}
+
+.tabBtn:hover {
+  background: var(--card-hover-bg);
+  border-color: rgba(13, 148, 136, 0.2);
+  color: var(--foreground);
+}
+
+.activeTabBtn {
+  background: rgba(13, 148, 136, 0.08);
+  border-color: var(--primary);
+  color: var(--foreground);
+  box-shadow: var(--shadow-subtle);
+}
+
+.tabNum {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.tabTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* Active Tab Panel */
+.tabPanel {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 4rem 3rem;
+  box-shadow: var(--shadow-subtle);
+}
+
+@media (max-width: 768px) {
+  .tabPanel {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+.panelHeader {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.panelNum {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(13, 148, 136, 0.15);
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  z-index: -1;
+}
+
+.panelTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.panelTagline {
+  color: var(--primary);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.panelItemsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .panelItemsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.serviceItemCard {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: var(--transition-smooth);
+}
+
+:global([data-theme="light"]) .serviceItemCard {
+  background: rgba(15, 23, 42, 0.01);
+}
+
+.serviceItemCard:hover {
+  border-color: rgba(13, 148, 136, 0.2);
+  transform: translateX(4px);
+}
+
+.bulletIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: rgba(13, 148, 136, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.serviceText {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* FRWCM Special Focus Callout */
+.frwcmFocusSection {
+  padding: 6rem 0;
+}
+
+.frwcmBox {
+  background: linear-gradient(135deg, rgba(9, 13, 22, 0.95) 0%, rgba(13, 148, 136, 0.15) 100%);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 4rem 3.5rem;
+  box-shadow: var(--shadow-premium);
+}
+
+:global([data-theme="light"]) .frwcmBox {
+  background: linear-gradient(135deg, #F8FAFC 0%, rgba(13, 148, 136, 0.08) 100%);
+}
+
+@media (max-width: 768px) {
+  .frwcmBox {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+.frwcmHeader {
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.focusBadge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(13, 148, 136, 0.05);
+  margin-bottom: 1rem;
+}
+
+.frwcmTitle {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.frwcmSubtitle {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.frwcmGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.5rem;
+}
+
+@media (max-width: 900px) {
+  .frwcmGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.blockTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.charList {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.charList li {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.charList li strong {
+  color: var(--foreground);
+}
+
+.blockDesc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.maturityScale {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.maturityLevel {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.levelColor {
+  width: 12px;
+  height: 48px;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.levelEmerging {
+  background: #F97316; /* Orange */
+}
+
+.levelFoundational {
+  background: #EAB308; /* Yellow */
+}
+
+.levelAdvanced {
+  background: #3B82F6; /* Blue */
+}
+
+.levelLeading {
+  background: #10B981; /* Emerald/Teal */
+}
+
+.levelInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.levelInfo strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.levelInfo span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}

@@ -1,0 +1,276 @@
+.main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 6rem;
+}
+
+/* Hero Section */
+.hero {
+  padding: 6rem 0 3rem 0;
+  text-align: center;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Archive & Filtering Section */
+.archiveSection {
+  padding: 2rem 0 6rem 0;
+}
+
+.filterBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--foreground);
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.1);
+  background: var(--card-hover-bg);
+}
+
+.categoryFilters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filterBtn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filterBtn:hover {
+  border-color: var(--foreground);
+  color: var(--foreground);
+}
+
+.activeFilterBtn {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--text-inverse);
+}
+
+.activeFilterBtn:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--text-inverse);
+}
+
+/* Publications Grid */
+.publicationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 500px) {
+  .publicationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pubCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition-smooth);
+}
+
+.pubCard:hover {
+  background: var(--card-hover-bg);
+  border-color: rgba(13, 148, 136, 0.25);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-premium);
+}
+
+.pubMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.pubDate {
+  color: var(--primary);
+  font-family: var(--font-display);
+}
+
+.pubCategory {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+:global([data-theme="light"]) .pubCategory {
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.pubTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.pubJournal {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.pubJournal strong {
+  color: var(--foreground);
+}
+
+.pubTeaser {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.pubFooter {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.readMoreLink {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.readMoreLink svg {
+  transition: var(--transition-smooth);
+}
+
+.pubCard:hover .readMoreLink {
+  color: var(--primary-hover);
+}
+
+.pubCard:hover .readMoreLink svg {
+  transform: translateX(3px);
+}
+
+/* Empty State Styles */
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--card-bg);
+  border: 1px dashed var(--border-color);
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emptyIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--text-muted);
+}
+
+.emptyTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.emptyDesc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.resetBtn {
+  background: var(--primary);
+  color: var(--text-inverse);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  margin-top: 0.5rem;
+}
+
+.resetBtn:hover {
+  background: var(--primary-hover);
+}

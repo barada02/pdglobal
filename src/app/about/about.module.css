@@ -1,0 +1,268 @@
+.main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 6rem;
+}
+
+/* Hero Section */
+.hero {
+  padding: 6rem 0 3rem 0;
+  text-align: center;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Mission & Vision Section */
+.missionVision {
+  padding: 4rem 0;
+}
+
+.mvGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .mvGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.mvCard {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition-smooth);
+}
+
+.mvCard:hover {
+  border-color: rgba(13, 148, 136, 0.2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-premium);
+}
+
+.mvIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(13, 148, 136, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.mvTitle {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.mvHighlight {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.mvText {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Values Section */
+.valuesSection {
+  padding: 6rem 0;
+  background: rgba(255, 255, 255, 0.01);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sectionHeader {
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  background: var(--card-bg);
+  border-top: 3px solid var(--primary);
+  border-left: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  border-radius: 0 0 12px 12px;
+  padding: 2.25rem 2rem;
+  transition: var(--transition-smooth);
+}
+
+.valueCard:hover {
+  background: var(--card-hover-bg);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-premium);
+}
+
+.valueTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.valueDesc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Biography Section */
+.bioSection {
+  padding: 6rem 0;
+}
+
+.bioGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .bioGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.bioLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: var(--shadow-subtle);
+}
+
+.avatarPlaceholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, #3B82F6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(13, 148, 136, 0.2);
+}
+
+.avatarInitials {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-inverse);
+}
+
+.bioMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.founderName {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.founderTitle {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.badgeList {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.bioBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  color: var(--text-muted);
+}
+
+:global([data-theme="light"]) .bioBadge {
+  background: rgba(15, 23, 42, 0.05);
+  color: var(--text-muted);
+}
+
+.bioRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bioTitle {
+  font-size: 2.25rem;
+}
+
+.bioParagraph {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
