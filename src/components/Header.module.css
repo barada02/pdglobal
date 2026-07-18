@@ -7,12 +7,24 @@
   background: rgba(9, 13, 22, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-color);
-  transition: var(--transition-smooth);
+  border-bottom: 1px solid transparent;
+  transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :global([data-theme="light"]) .header {
   background: rgba(248, 250, 252, 0.7);
+}
+
+.scrolled {
+  height: 60px;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-subtle);
+  background: rgba(9, 13, 22, 0.88);
+}
+
+:global([data-theme="light"]) .scrolled {
+  background: rgba(248, 250, 252, 0.88);
 }
 
 .container {

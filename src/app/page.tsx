@@ -2,6 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Reveal from "@/components/Reveal";
+import OrgNetworkVisual from "@/components/OrgNetworkVisual";
+import EditorialImage from "@/components/EditorialImage";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -45,32 +48,50 @@ export default function Home() {
         {/* Hero Section */}
         <section className={styles.heroSection}>
           <div className="container">
-            <div className={styles.heroContent}>
-              <span className={styles.heroBadge}>Performance Dimensions Global</span>
-              <h1 className={styles.heroTitle}>
-                Architecting &<br />
-                <span className={styles.highlightText}>Accelerating</span> Organizations
-              </h1>
-              <p className={styles.heroSubtitle}>
-                PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS-DRIVEN
-              </p>
-              
-              {/* Quote Card */}
-              <div className={styles.quoteCard}>
-                <p className={styles.quoteText}>
-                  &ldquo;Change is not a constant, it is accelerating&rdquo;
+            <div className={styles.heroGrid}>
+              <Reveal className={styles.heroContent}>
+                <span className={styles.heroBadge}>Performance Dimensions Global</span>
+                <h1 className={styles.heroTitle}>
+                  Architecting &<br />
+                  <span className={styles.highlightText}>Accelerating</span> Organizations
+                </h1>
+                <p className={styles.heroSubtitle}>
+                  PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS-DRIVEN
                 </p>
-                <p className={styles.quoteAuthor}>— Himank Priyadarshi, Ph.D.</p>
-              </div>
 
-              <div className={styles.heroActions}>
-                <Link href="/services" className={styles.primaryButton}>
-                  Explore Capabilities
-                </Link>
-                <Link href="/contact" className={styles.secondaryButton}>
-                  Get in Touch
-                </Link>
-              </div>
+                {/* Quote Card */}
+                <div className={styles.quoteCard}>
+                  <p className={styles.quoteText}>
+                    &ldquo;Change is not a constant, it is accelerating&rdquo;
+                  </p>
+                  <p className={styles.quoteAuthor}>— Himank Priyadarshi, Ph.D.</p>
+                </div>
+
+                <div className={styles.heroActions}>
+                  <Link href="/services" className={styles.primaryButton}>
+                    Explore Capabilities
+                  </Link>
+                  <Link href="/contact" className={styles.secondaryButton}>
+                    Get in Touch
+                  </Link>
+                </div>
+              </Reveal>
+
+              <Reveal delay={150} className={styles.heroVisual}>
+                <div className={styles.heroVisualStack}>
+                  <div className={styles.heroNetworkAccent}>
+                    <OrgNetworkVisual variant="hero" />
+                  </div>
+                  <EditorialImage
+                    src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?q=80&w=1600&auto=format&fit=crop"
+                    alt="Executive leadership team collaborating in a strategy session"
+                    aspect="4/3"
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className={styles.heroImage}
+                  />
+                </div>
+              </Reveal>
             </div>
           </div>
         </section>
@@ -79,18 +100,18 @@ export default function Home() {
         <section className={styles.metricsSection}>
           <div className="container">
             <div className={styles.metricsGrid}>
-              <div className={styles.metricCard}>
+              <Reveal as="div" className={styles.metricCard}>
                 <h3 className={styles.metricVal}>30+</h3>
                 <p className={styles.metricLabel}>Years of Global Practice & Research</p>
-              </div>
-              <div className={styles.metricCard}>
+              </Reveal>
+              <Reveal as="div" delay={100} className={styles.metricCard}>
                 <h3 className={styles.metricVal}>5</h3>
                 <p className={styles.metricLabel}>Integrated Capability Clusters</p>
-              </div>
-              <div className={styles.metricCard}>
+              </Reveal>
+              <Reveal as="div" delay={200} className={styles.metricCard}>
                 <h3 className={styles.metricVal}>Global</h3>
                 <p className={styles.metricLabel}>Footprint: US &middot; EU &middot; Asia &middot; ANZ</p>
-              </div>
+              </Reveal>
             </div>
           </div>
         </section>
@@ -99,12 +120,12 @@ export default function Home() {
         <section className={styles.introSection}>
           <div className="container">
             <div className={styles.introGrid}>
-              <div className={styles.introLeft}>
+              <Reveal className={styles.introLeft}>
                 <h2 className={styles.sectionTitle}>
                   Bridging organizational potential and performance.
                 </h2>
-              </div>
-              <div className={styles.introRight}>
+              </Reveal>
+              <Reveal delay={120} className={styles.introRight}>
                 <p className={styles.bodyText}>
                   Performance Dimensions Global (PDG) is a People-science based global Talent and Organization Effectiveness consulting firm. We partner with you to co-create and execute business outcome–oriented processes for superior performance.
                 </p>
@@ -114,7 +135,7 @@ export default function Home() {
                 <Link href="/about" className={styles.textLink}>
                   Learn more about our vision and values &rarr;
                 </Link>
-              </div>
+              </Reveal>
             </div>
           </div>
         </section>
@@ -122,16 +143,16 @@ export default function Home() {
         {/* Capabilities Preview Section */}
         <section className={styles.capabilitiesSection}>
           <div className="container">
-            <div className={styles.capabilitiesHeader}>
+            <Reveal className={styles.capabilitiesHeader}>
               <h2 className={styles.sectionTitleCenter}>Core Practice Areas</h2>
               <p className={styles.sectionSubtitleCenter}>
                 An integrated portfolio spanning the full talent and organizational lifecycle.
               </p>
-            </div>
-            
+            </Reveal>
+
             <div className={styles.capabilitiesGrid}>
-              {capabilityPreviews.map((cap) => (
-                <div key={cap.num} className={styles.capabilityCard}>
+              {capabilityPreviews.map((cap, idx) => (
+                <Reveal as="div" key={cap.num} delay={idx * 80} className={styles.capabilityCard}>
                   <div className={styles.cardHeader}>
                     <span className={styles.cardNum}>{cap.num}</span>
                     <h3 className={styles.cardTitle}>{cap.title}</h3>
@@ -144,7 +165,7 @@ export default function Home() {
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
                   </Link>
-                </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -153,15 +174,15 @@ export default function Home() {
         {/* CTA Section */}
         <section className={styles.ctaSection}>
           <div className="container">
-            <div className={styles.ctaBox}>
-              <h2 className={styles.ctaTitle}>Ready to accelerate your organization's potential?</h2>
+            <Reveal className={styles.ctaBox}>
+              <h2 className={styles.ctaTitle}>Ready to accelerate your organization&apos;s potential?</h2>
               <p className={styles.ctaDesc}>
-                Let's start a conversation about customized organizational effectiveness, analytics, and leadership assessment models.
+                Let&apos;s start a conversation about customized organizational effectiveness, analytics, and leadership assessment models.
               </p>
               <Link href="/contact" className={styles.ctaButton}>
                 Schedule a Consultation
               </Link>
-            </div>
+            </Reveal>
           </div>
         </section>
       </main>

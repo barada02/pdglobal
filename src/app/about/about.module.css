@@ -9,6 +9,27 @@
 .hero {
   padding: 6rem 0 3rem 0;
   text-align: center;
+  position: relative;
+}
+
+.heroVisualWrap {
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  width: 380px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .heroVisualWrap {
+    display: none;
+  }
+}
+
+.hero :global(.container) {
+  position: relative;
+  z-index: 1;
 }
 
 .subtitle {
@@ -37,6 +58,34 @@
 /* Mission & Vision Section */
 .missionVision {
   padding: 4rem 0;
+}
+
+.impactSection {
+  padding: 5rem 0;
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .impactGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.impactContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.impactContent .sectionTitle {
+  max-width: 480px;
 }
 
 .mvGrid {
@@ -193,22 +242,36 @@
 }
 
 .avatarPlaceholder {
-  width: 140px;
-  height: 140px;
+  width: 148px;
+  height: 148px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary) 0%, #3B82F6 100%);
+  padding: 4px;
+  background: conic-gradient(from 180deg, var(--primary), var(--accent), var(--primary));
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  box-shadow: 0 0 20px rgba(13, 148, 136, 0.2);
+  box-shadow: 0 0 24px rgba(13, 148, 136, 0.22);
+}
+
+.avatarInner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1px var(--card-border);
 }
 
 .avatarInitials {
   font-family: var(--font-display);
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 800;
-  color: var(--text-inverse);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bioMeta {

@@ -12,9 +12,72 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://www.pdglobal.net";
+
 export const metadata: Metadata = {
-  title: "Performance Dimensions Global | Talent & Organization Effectiveness",
-  description: "People-Science Based, Talent & Organization Effectiveness, and Analytics-Driven Consulting Firm.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Performance Dimensions Global | Talent & Organization Effectiveness",
+    template: "%s",
+  },
+  description:
+    "Performance Dimensions Global (PDG) is a people-science based, global Talent and Organization Effectiveness consulting firm led by Dr. Himank Priyadarshi, delivering analytics-driven talent management, leadership assessment, and AI-powered workforce strategy.",
+  keywords: [
+    "Talent Management Consulting",
+    "Organization Effectiveness",
+    "Leadership Assessment",
+    "People Analytics",
+    "AI Workforce Strategy",
+    "Skills-Based Organization",
+    "Himank Priyadarshi",
+    "Performance Dimensions Global",
+  ],
+  authors: [{ name: "Performance Dimensions Global" }],
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Performance Dimensions Global",
+    title: "Performance Dimensions Global | Talent & Organization Effectiveness",
+    description:
+      "People-science based, global Talent and Organization Effectiveness consulting firm. Architecting & Accelerating Organizations.",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Performance Dimensions Global | Talent & Organization Effectiveness",
+    description:
+      "People-science based, global Talent and Organization Effectiveness consulting firm. Architecting & Accelerating Organizations.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Performance Dimensions Global",
+  alternateName: "PDG",
+  url: siteUrl,
+  description:
+    "People-science based, global Talent and Organization Effectiveness consulting firm.",
+  areaServed: ["United States", "Canada", "Europe", "Australia", "India"],
+  founder: {
+    "@type": "Person",
+    name: "Himank Priyadarshi, Ph.D.",
+    jobTitle: "Founder & Principal Consultant",
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Tata Institute of Social Sciences" },
+      { "@type": "CollegeOrUniversity", name: "MIT Sloan School of Management" },
+    ],
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Chicago",
+    addressRegion: "IL",
+    addressCountry: "US",
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +88,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`} data-theme="dark">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>

@@ -9,6 +9,27 @@
 .hero {
   padding: 6rem 0 3rem 0;
   text-align: center;
+  position: relative;
+}
+
+.heroVisualWrap {
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  width: 380px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .heroVisualWrap {
+    display: none;
+  }
+}
+
+.hero :global(.container) {
+  position: relative;
+  z-index: 1;
 }
 
 .subtitle {
@@ -56,6 +77,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.infoImage {
+  width: 100%;
 }
 
 .formColumn {
