@@ -92,6 +92,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* overflow-x: clip on body (globals.css) handles horizontal clipping without breaking position:sticky */}
         {children}
       </body>
     </html>

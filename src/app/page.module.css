@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: clip; /* 'clip' prevents layout bleed without creating a scroll container */
   padding-bottom: 6rem;
 }
 
@@ -23,18 +23,21 @@
   z-index: 1;
   pointer-events: none;
   background: radial-gradient(
-    ellipse 60% 80% at 20% 40%,
+    ellipse 55% 75% at 15% 45%,
     var(--background) 0%,
-    rgba(0, 0, 0, 0) 70%
+    rgba(0, 0, 0, 0) 65%
   );
-  opacity: 0.6;
+  opacity: 0.55;
+}
+
+.heroSection :global(.container) {
+  position: relative;
+  z-index: 2;
 }
 
 .heroGrid {
   display: grid;
   grid-template-columns: 1fr;
-  position: relative;
-  z-index: 2;
 }
 
 .heroContent {
@@ -249,15 +252,22 @@
 
 .introGrid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas: "left image" "right image";
+  align-items: start;
+  gap: 3rem 4rem;
 }
 
 @media (max-width: 850px) {
   .introGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "left" "right" "image";
     gap: 2rem;
   }
+}
+
+.introLeft {
+  grid-area: left;
 }
 
 .sectionTitle {
@@ -268,9 +278,21 @@
 }
 
 .introRight {
+  grid-area: right;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.introImageCol {
+  grid-area: image;
+  align-self: stretch;
+}
+
+.introImage {
+  height: 100%;
+  min-height: 320px;
+  box-shadow: var(--shadow-subtle);
 }
 
 .bodyText {

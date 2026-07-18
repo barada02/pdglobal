@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: clip; /* 'clip' prevents layout bleed without creating a scroll container */
   padding-bottom: 6rem;
 }
 

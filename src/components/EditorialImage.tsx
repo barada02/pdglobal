@@ -9,6 +9,9 @@ interface EditorialImageProps {
   priority?: boolean;
   sizes?: string;
   className?: string;
+  radius?: number;
+  hoverScale?: number;
+  transitionMs?: number;
 }
 
 export default function EditorialImage({
@@ -18,11 +21,21 @@ export default function EditorialImage({
   priority = false,
   sizes = "(max-width: 900px) 100vw, 50vw",
   className = "",
+  radius = 20,
+  hoverScale = 1.035,
+  transitionMs = 600,
 }: EditorialImageProps) {
   return (
     <div
       className={`${styles.frame} ${className}`}
-      style={{ aspectRatio: aspect.replace("/", " / ") }}
+      style={
+        {
+          aspectRatio: aspect.replace("/", " / "),
+          borderRadius: `${radius}px`,
+          "--hover-scale": hoverScale,
+          "--transition-ms": `${transitionMs}ms`,
+        } as React.CSSProperties
+      }
     >
       <Image
         src={src}

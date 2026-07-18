@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import HeroParticles from "@/components/HeroParticles";
+import EditorialImage from "@/components/EditorialImage";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -132,6 +133,19 @@ export default function Home() {
                 <Link href="/about" className={styles.textLink}>
                   Learn more about our vision and values <span className="arrow">&rarr;</span>
                 </Link>
+              </Reveal>
+
+              <Reveal delay={200} className={styles.introImageCol}>
+                <EditorialImage
+                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1600&auto=format&fit=crop"
+                  alt="Executive adjusting his suit jacket in a modern corporate office"
+                  aspect="16/10"
+                  sizes="(max-width: 850px) 100vw, 45vw"
+                  className={styles.introImage}
+                  radius={14}
+                  hoverScale={1.02}
+                  transitionMs={300}
+                />
               </Reveal>
             </div>
           </div>
