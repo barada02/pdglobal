@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Performance Dimensions Global (PDG) is a people-science based, global Talent and Organization Effectiveness consulting firm led by Dr. Himank Priyadarshi, delivering analytics-driven talent management, leadership assessment, and AI-powered workforce strategy.",
+    "Performance Dimensions Global (PDG) is a people-science based, global Talent and Organization Effectiveness consulting firm led by Dr. Himank Priyadarshi, delivering analytics & AI driven talent management, leadership assessment, and AI-powered workforce strategy.",
   keywords: [
     "Talent Management Consulting",
     "Organization Effectiveness",

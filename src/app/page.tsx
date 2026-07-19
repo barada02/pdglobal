@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      
+
       <main className={styles.main}>
         {/* Glow Effects */}
         <div className="glowing-bg" style={{ top: "10%", left: "10%" }}></div>
@@ -58,7 +58,7 @@ export default function Home() {
                   Architecting & Accelerating Organizations
                 </h1>
                 <p className={styles.heroSubtitle}>
-                  PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS-DRIVEN
+                  PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS & AI DRIVEN
                 </p>
 
                 {/* Quote Card */}
