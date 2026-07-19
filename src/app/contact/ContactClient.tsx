@@ -174,7 +174,7 @@ export default function ContactClient() {
                         value={formData.name}
                         onChange={handleInputChange}
                         className={styles.input}
-                        placeholder="e.g. John Doe"
+                        placeholder="e.g. Sarah Jenkins"
                       />
                     </div>
 
@@ -189,7 +189,7 @@ export default function ContactClient() {
                           value={formData.email}
                           onChange={handleInputChange}
                           className={styles.input}
-                          placeholder="e.g. jdoe@company.com"
+                          placeholder="e.g. sjenkins@company.com"
                         />
                       </div>
                       
