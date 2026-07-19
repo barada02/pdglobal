@@ -91,7 +91,7 @@ export default function About() {
                   </svg>
                 </div>
                 <h2 className={styles.mvTitle}>Our Mission</h2>
-                <h3 className={styles.mvHighlight}>A trusted advisor.</h3>
+                <h3 className={styles.mvHighlight}>Be a trusted advisor.</h3>
                 <p className={styles.mvText}>
                   We are committed to partnering, guiding, and serving our clients as trusted advisors — delivering best-in-class, customized Talent and Organizational Effectiveness solutions for excellence.
                 </p>
