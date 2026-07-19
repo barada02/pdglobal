@@ -154,7 +154,7 @@ export default function About() {
                 <div className={styles.bioPhotoFrame}>
                   <Image
                     src="/founder-portrait.jpg"
-                    alt="Himank Priyadarshi, Ph.D. — Founder & Principal Consultant, Performance Dimensions Global"
+                    alt="Himank Priyadarshi, Ph.D. — Founder and CEO, Performance Dimensions Global"
                     fill
                     sizes="(max-width: 900px) 100vw, 380px"
                     className={styles.bioPhoto}
@@ -163,7 +163,7 @@ export default function About() {
                 </div>
                 <div className={styles.bioMeta}>
                   <h3 className={styles.founderName}>Himank Priyadarshi, Ph.D.</h3>
-                  <p className={styles.founderTitle}>Founder & Principal Consultant</p>
+                  <p className={styles.founderTitle}>Founder and CEO</p>
                   <div className={styles.badgeList}>
                     <span className={styles.bioBadge}>MIT Sloan Fellow</span>
                     <span className={styles.bioBadge}>TISS Alumnus</span>

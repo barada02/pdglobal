@@ -51,7 +51,7 @@ export default function Footer() {
             <h4 className={styles.title}>Contact</h4>
             <p className={styles.contactItem}>
               <strong>Himank Priyadarshi, Ph.D.</strong><br />
-              Founder & Principal Consultant
+              Founder and CEO
             </p>
             <p className={styles.contactItem}>
               <svg className={styles.icon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

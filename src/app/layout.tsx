@@ -66,7 +66,7 @@ const jsonLd = {
   founder: {
     "@type": "Person",
     name: "Himank Priyadarshi, Ph.D.",
-    jobTitle: "Founder & Principal Consultant",
+    jobTitle: "Founder and CEO",
     alumniOf: [
       { "@type": "CollegeOrUniversity", name: "Tata Institute of Social Sciences" },
       { "@type": "CollegeOrUniversity", name: "MIT Sloan School of Management" },

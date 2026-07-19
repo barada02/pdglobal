@@ -76,7 +76,7 @@ export default function Home() {
                         className={styles.quoteAvatarImg}
                       />
                     </span>
-                    <p className={styles.quoteAuthor}>Himank Priyadarshi, Ph.D. — Founder & Principal Consultant</p>
+                    <p className={styles.quoteAuthor}>Himank Priyadarshi, Ph.D. — Founder and CEO</p>
                   </div>
                 </div>
 
