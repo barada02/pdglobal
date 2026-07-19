@@ -55,7 +55,7 @@ export default function Home() {
               <Reveal className={styles.heroContent}>
                 <span className={styles.heroBadge}>Performance Dimensions Global</span>
                 <h1 className={styles.heroTitle}>
-                  Architecting & <span className={styles.highlightText}>Accelerating</span> Organizations
+                  Architecting & Accelerating Organizations
                 </h1>
                 <p className={styles.heroSubtitle}>
                   PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS-DRIVEN
