@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      
+
       <main className={styles.main}>
         {/* Glow Effects */}
         <div className="glowing-bg" style={{ top: "10%", left: "10%" }}></div>
@@ -55,11 +55,10 @@ export default function Home() {
               <Reveal className={styles.heroContent}>
                 <span className={styles.heroBadge}>Performance Dimensions Global</span>
                 <h1 className={styles.heroTitle}>
-                  Architecting &<br />
-                  <span className={styles.highlightText}>Accelerating</span> Organizations
+                  Architecting & Accelerating Organizations
                 </h1>
                 <p className={styles.heroSubtitle}>
-                  PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS-DRIVEN
+                  PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS & AI DRIVEN
                 </p>
 
                 {/* Quote Card */}
@@ -77,7 +76,7 @@ export default function Home() {
                         className={styles.quoteAvatarImg}
                       />
                     </span>
-                    <p className={styles.quoteAuthor}>Himank Priyadarshi, Ph.D. — Founder & Principal Consultant</p>
+                    <p className={styles.quoteAuthor}>Himank Priyadarshi, Ph.D. — Founder and CEO</p>
                   </div>
                 </div>
 
@@ -107,8 +106,8 @@ export default function Home() {
                 <p className={styles.metricLabel}>Integrated Capability Clusters</p>
               </Reveal>
               <Reveal as="div" delay={200} className={styles.metricCard}>
-                <h3 className={styles.metricVal}>Global</h3>
-                <p className={styles.metricLabel}>Footprint: US &middot; EU &middot; Asia &middot; ANZ</p>
+                <h3 className={styles.metricVal}>Global Footprint</h3>
+                <p className={styles.metricLabel}>US &middot; EU &middot; Asia &middot; ANZ</p>
               </Reveal>
             </div>
           </div>

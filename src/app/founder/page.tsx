@@ -10,7 +10,7 @@ import styles from "./founder.module.css";
 export const metadata: Metadata = {
   title: "Dr. Himank Priyadarshi | Founder, Performance Dimensions Global",
   description:
-    "Dr. Himank Priyadarshi, Ph.D. (TISS Mumbai; Post-doctoral, MIT Sloan) — Founder & Principal Consultant of Performance Dimensions Global. 30+ years in Talent Management, Organization Development, People Analytics, and AI-Powered Workforce Strategy.",
+    "Dr. Himank Priyadarshi, Ph.D. (TISS Mumbai; Post-doctoral, MIT Sloan) — Founder and CEO of Performance Dimensions Global. 30+ years in Talent Management, Organization Development, People Analytics, and AI-Powered Workforce Strategy.",
 };
 
 const expertise = [
@@ -196,7 +196,7 @@ export default function FounderPage() {
                 <div className={styles.heroPortraitFrame}>
                   <Image
                     src="/founder-portrait.jpg"
-                    alt="Dr. Himank Priyadarshi, Founder & Principal Consultant, Performance Dimensions Global"
+                    alt="Dr. Himank Priyadarshi, Founder and CEO, Performance Dimensions Global"
                     fill
                     sizes="(max-width: 900px) 100vw, 420px"
                     className={styles.heroPortrait}
@@ -206,7 +206,7 @@ export default function FounderPage() {
               </Reveal>
 
               <Reveal delay={100} className={styles.heroContent}>
-                <span className={styles.eyebrow}>Founder &amp; Principal Consultant</span>
+                <span className={styles.eyebrow}>Founder and CEO</span>
                 <h1 className={styles.heroName}>Dr. Himank Priyadarshi</h1>
                 <p className={styles.heroCredentials}>
                   Ph.D., Tata Institute of Social Sciences (TISS), Mumbai &middot; Post-Doctoral, Sloan School of Management, MIT, Boston &mdash; Industrial &amp; Organizational Psychology

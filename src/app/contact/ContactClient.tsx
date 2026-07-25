@@ -91,7 +91,7 @@ export default function ContactClient() {
                     </div>
                     <div className={styles.itemText}>
                       <strong>Himank Priyadarshi, Ph.D.</strong>
-                      <span>Founder & Principal Consultant</span>
+                      <span>Founder and CEO</span>
                     </div>
                   </div>
 

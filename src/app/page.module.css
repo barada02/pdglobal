@@ -23,9 +23,9 @@
   z-index: 1;
   pointer-events: none;
   background: radial-gradient(
-    ellipse 55% 75% at 15% 45%,
+    ellipse 60% 60% at 50% 50%,
     var(--background) 0%,
-    rgba(0, 0, 0, 0) 65%
+    rgba(0, 0, 0, 0) 70%
   );
   opacity: 0.55;
 }
@@ -41,10 +41,12 @@
 }
 
 .heroContent {
-  max-width: 800px;
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 1.5rem;
 }
 
@@ -62,15 +64,21 @@
 }
 
 .heroTitle {
-  font-size: 4rem;
+  font-size: 3.25rem;
   line-height: 1.1;
   font-weight: 800;
   letter-spacing: -0.03em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .heroTitle {
     font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.25rem;
   }
 }
 
@@ -235,6 +243,13 @@
   color: var(--primary);
   margin-bottom: 0.5rem;
   line-height: 1;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .metricVal {
+    font-size: 2.25rem;
+  }
 }
 
 .metricLabel {
