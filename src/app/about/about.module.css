@@ -176,12 +176,15 @@
 }
 
 .valuesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
 .valueCard {
+  flex: 1 1 280px;
+  max-width: 340px;
   background: var(--card-bg);
   border-top: 3px solid var(--primary);
   border-left: 1px solid var(--card-border);
