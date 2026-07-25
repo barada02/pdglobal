@@ -22,7 +22,11 @@ export default function Footer() {
           {/* Company Intro column */}
           <div className={styles.infoCol}>
             <Link href="/" className={styles.logo} aria-label="Performance Dimensions Global — Home">
-              <Logo variant="full" className={styles.logoMark} />
+              <Logo variant="icon" className={styles.logoMark} />
+              <span className={styles.logoWordmark}>
+                <span className={styles.logoText}>PD</span>
+                <span className={styles.logoSub}>GLOBAL</span>
+              </span>
             </Link>
             <p className={styles.description}>
               Performance Dimensions Global (PDG) is a People-science based global Talent and Organization Effectiveness consulting firm.
