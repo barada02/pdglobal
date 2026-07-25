@@ -178,14 +178,20 @@
 
 /* Publications Grid */
 .publicationsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
+.pubCard {
+  flex: 1 1 400px;
+  max-width: 460px;
+}
+
 @media (max-width: 500px) {
-  .publicationsGrid {
-    grid-template-columns: 1fr;
+  .pubCard {
+    flex-basis: 100%;
   }
 }
 

@@ -251,6 +251,33 @@
   line-height: 1.5;
 }
 
+.panelNav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.navLinkBtn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--foreground);
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.navLinkBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--card-bg);
+}
+
 /* FRWCM Special Focus Callout */
 .frwcmFocusSection {
   padding: 6rem 0;
