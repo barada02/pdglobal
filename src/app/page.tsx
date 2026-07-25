@@ -106,8 +106,8 @@ export default function Home() {
                 <p className={styles.metricLabel}>Integrated Capability Clusters</p>
               </Reveal>
               <Reveal as="div" delay={200} className={styles.metricCard}>
-                <h3 className={styles.metricVal}>Global</h3>
-                <p className={styles.metricLabel}>Footprint: US &middot; EU &middot; Asia &middot; ANZ</p>
+                <h3 className={styles.metricVal}>Global Footprint</h3>
+                <p className={styles.metricLabel}>US &middot; EU &middot; Asia &middot; ANZ</p>
               </Reveal>
             </div>
           </div>
