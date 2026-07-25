@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import ExpertiseCloud from "@/components/ExpertiseCloud";
 import styles from "./founder.module.css";
 
 export const metadata: Metadata = {
@@ -254,12 +255,8 @@ export default function FounderPage() {
               <span className={styles.sectionEyebrow}>Core Areas of Expertise</span>
               <h2 className={styles.sectionTitle}>Three decades of people-science depth</h2>
             </Reveal>
-            <Reveal delay={80} className={styles.chipCloud}>
-              {expertise.map((item) => (
-                <span key={item} className={styles.chip}>
-                  {item}
-                </span>
-              ))}
+            <Reveal delay={80}>
+              <ExpertiseCloud items={expertise} />
             </Reveal>
           </div>
         </section>
@@ -280,8 +277,10 @@ export default function FounderPage() {
                     {idx !== career.length - 1 && <span className={styles.timelineLine} />}
                   </div>
                   <div className={styles.timelineCard}>
-                    <h3 className={styles.timelineRole}>{item.role}</h3>
-                    <p className={styles.timelineDetail}>{item.detail}</p>
+                    <h3 className={styles.timelineRole}>
+                      {item.role}
+                      <span className={styles.timelineDetail}> — {item.detail}</span>
+                    </h3>
                     <div className={styles.timelineOrgRow}>
                       <span className={styles.timelineOrg}>{item.org}</span>
                       <span className={styles.timelineLocation}>{item.location}</span>
@@ -298,7 +297,9 @@ export default function FounderPage() {
           <div className="container">
             <Reveal className={styles.sectionHeader}>
               <span className={styles.sectionEyebrow}>Recent Consulting Focus</span>
-              <h2 className={styles.sectionTitle}>HR &amp; Organizational Effectiveness Consulting Areas</h2>
+              <h2 className={`${styles.sectionTitle} ${styles.sectionTitleNowrap}`}>
+                HR &amp; Organizational Effectiveness Consulting Areas
+              </h2>
             </Reveal>
 
             <div className={styles.focusGrid}>
@@ -317,7 +318,9 @@ export default function FounderPage() {
           <div className="container">
             <Reveal className={styles.sectionHeader}>
               <span className={styles.sectionEyebrow}>AI-Powered Talent Management</span>
-              <h2 className={styles.sectionTitle}>Bringing Generative &amp; Agentic AI into HR practice</h2>
+              <h2 className={`${styles.sectionTitle} ${styles.sectionTitleNowrap}`}>
+                Bringing Generative &amp; Agentic AI into HR practice
+              </h2>
             </Reveal>
 
             <div className={styles.aiGrid}>
@@ -355,7 +358,9 @@ export default function FounderPage() {
           <div className="container">
             <Reveal className={styles.sectionHeader}>
               <span className={styles.sectionEyebrow}>Research &amp; Publications</span>
-              <h2 className={styles.sectionTitle}>Selected research, publications &amp; assessment tools</h2>
+              <h2 className={`${styles.sectionTitle} ${styles.sectionTitleNowrap}`}>
+                Selected research, publications &amp; assessment tools
+              </h2>
             </Reveal>
 
             <div className={styles.pubGrid}>
