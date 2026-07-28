@@ -10,7 +10,7 @@ interface LogoProps {
 
 // width / height, matching the actual cropped asset dimensions
 const RATIOS: Record<"icon" | "full", number> = {
-  icon: 999 / 1022,
+  icon: 956 / 974,
   full: 1023 / 1200,
 };
 

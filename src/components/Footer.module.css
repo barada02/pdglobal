@@ -52,11 +52,32 @@
 
 .logo {
   display: inline-flex;
-  align-items: flex-start;
+  align-items: center;
+  gap: 0.85rem;
 }
 
 .logoMark {
-  height: 130px;
+  height: 64px;
+}
+
+.logoWordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.logoText {
+  color: var(--primary);
+  background: linear-gradient(135deg, var(--primary) 0%, #20C997 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logoSub {
+  color: var(--foreground);
 }
 
 .description {

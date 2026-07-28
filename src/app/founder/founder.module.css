@@ -210,31 +210,9 @@
   line-height: 1.25;
 }
 
-/* ---------- Expertise chip cloud ---------- */
-.chipCloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  justify-content: center;
-  max-width: 980px;
-  margin: 0 auto;
-}
-
-.chip {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  transition: var(--transition-smooth);
-}
-
-.chip:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  transform: translateY(-2px);
+.sectionTitleNowrap {
+  white-space: nowrap;
+  font-size: clamp(1.05rem, 3.6vw, 2rem);
 }
 
 /* ---------- Timeline ---------- */
@@ -281,13 +259,13 @@
 .timelineRole {
   font-size: 1.15rem;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 .timelineDetail {
   color: var(--text-muted);
   font-size: 0.95rem;
-  margin-top: 0.3rem;
-  line-height: 1.5;
+  font-weight: 400;
 }
 
 .timelineOrgRow {
@@ -312,8 +290,38 @@
 /* ---------- Focus grid ---------- */
 .focusGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+.focusGrid .focusCard:last-child {
+  grid-column: 2 / 3;
+}
+
+@media (max-width: 900px) {
+  .focusGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .focusGrid .focusCard:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .focusGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .focusGrid .focusCard:last-child {
+    grid-column: auto;
+    justify-self: stretch;
+    width: auto;
+    min-width: 0;
+  }
 }
 
 .focusCard {

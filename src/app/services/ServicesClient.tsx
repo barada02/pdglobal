@@ -201,6 +201,27 @@ export default function ServicesClient() {
                         </div>
                       ))}
                     </div>
+
+                    <div className={styles.panelNav}>
+                      {clusters.findIndex((cl) => cl.id === activeTab) > 0 && (
+                        <button
+                          type="button"
+                          className={styles.navLinkBtn}
+                          onClick={() => setActiveTab(clusters[clusters.findIndex((cl) => cl.id === activeTab) - 1].id)}
+                        >
+                          &larr; Previous
+                        </button>
+                      )}
+                      {clusters.findIndex((cl) => cl.id === activeTab) < clusters.length - 1 && (
+                        <button
+                          type="button"
+                          className={styles.navLinkBtn}
+                          onClick={() => setActiveTab(clusters[clusters.findIndex((cl) => cl.id === activeTab) + 1].id)}
+                        >
+                          Next <span className="arrow">&rarr;</span>
+                        </button>
+                      )}
+                    </div>
                   </Reveal>
                 );
               })}
