@@ -8,6 +8,8 @@ import EditorialImage from "@/components/EditorialImage";
 import styles from "./contact.module.css";
 
 export default function ContactClient() {
+  const recipientEmail = "Himank.Priyadarshi@pdglobal.net";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,18 +23,32 @@ export default function ContactClient() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus("submitting");
-    
-    // Simulate API submission
-    setTimeout(() => {
-      setFormStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        org: "",
-        interest: "General Inquiry",
-        message: "",
-      });
-    }, 1500);
+
+    const subject = encodeURIComponent(
+      `Business Inquiry - ${formData.org || formData.name || "PD Global"}`
+    );
+    const body = encodeURIComponent(
+      [
+        `Name: ${formData.name}`,
+        `Email: ${formData.email}`,
+        `Organization: ${formData.org}`,
+        `Area of Strategic Interest: ${formData.interest}`,
+        "",
+        "Inquiry Details:",
+        formData.message,
+      ].join("\n")
+    );
+
+    window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+
+    setFormStatus("success");
+    setFormData({
+      name: "",
+      email: "",
+      org: "",
+      interest: "General Inquiry",
+      message: "",
+    });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -152,9 +168,15 @@ export default function ContactClient() {
                         <polyline points="20 6 9 17 4 12"></polyline>
                       </svg>
                     </div>
-                    <h3 className={styles.successTitle}>Inquiry Submitted Successfully</h3>
+                    <h3 className={styles.successTitle}>Inquiry Draft Ready</h3>
                     <p className={styles.successDesc}>
-                      Thank you for starting a conversation with PD Global. Dr. Priyadarshi or a consulting representative will contact you within 24 business hours to discuss your organizational goals.
+                      Your email draft has been opened for PD Global. Send it from your email client, and Dr. Priyadarshi or a consulting representative will follow up within 24 business hours.
+                    </p>
+                    <p className={styles.disclaimerText}>
+                      <span className={styles.disclaimerBadge}>Under Development</span>
+                      <span>
+                        This site is currently under development. Full inquiry services will be activated when the site is deployed.
+                      </span>
                     </p>
                     <button onClick={() => setFormStatus("idle")} className={styles.submitBtn}>
                       Send Another Inquiry
@@ -247,6 +269,12 @@ export default function ContactClient() {
                     >
                       {formStatus === "submitting" ? "Submitting Inquiry..." : "Submit Inquiry"}
                     </button>
+                    <p className={styles.disclaimerText}>
+                      <span className={styles.disclaimerBadge}>Under Development</span>
+                      <span>
+                        This site is currently under development. Full inquiry services will be activated when the site is deployed.
+                      </span>
+                    </p>
                   </form>
                 )}
               </Reveal>
