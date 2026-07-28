@@ -173,7 +173,10 @@ export default function ContactClient() {
                       Your email draft has been opened for PD Global. Send it from your email client, and Dr. Priyadarshi or a consulting representative will follow up within 24 business hours.
                     </p>
                     <p className={styles.disclaimerText}>
-                      This site is currently under development. Full inquiry services will be activated when the site is deployed.
+                      <span className={styles.disclaimerBadge}>Under Development</span>
+                      <span>
+                        This site is currently under development. Full inquiry services will be activated when the site is deployed.
+                      </span>
                     </p>
                     <button onClick={() => setFormStatus("idle")} className={styles.submitBtn}>
                       Send Another Inquiry
@@ -267,7 +270,10 @@ export default function ContactClient() {
                       {formStatus === "submitting" ? "Submitting Inquiry..." : "Submit Inquiry"}
                     </button>
                     <p className={styles.disclaimerText}>
-                      This site is currently under development. Full inquiry services will be activated when the site is deployed.
+                      <span className={styles.disclaimerBadge}>Under Development</span>
+                      <span>
+                        This site is currently under development. Full inquiry services will be activated when the site is deployed.
+                      </span>
                     </p>
                   </form>
                 )}
