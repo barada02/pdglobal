@@ -46,62 +46,62 @@ const expertise = [
   "Assessment/Development Centres",
 ];
 
-const career = [
-  {
-    role: "Group Head",
-    detail: "Talent Management and Assessment Practice, Talent COE",
-    org: "Macy's Inc.",
-    location: "New York City",
-  },
-  {
-    role: "US Head",
-    detail: "Global People/Talent Analytics",
-    org: "Siemens Corporation",
-    location: "Iselin, New Jersey, USA",
-  },
-  {
-    role: "Global Head",
-    detail: "Talent Management & Organization Development",
-    org: "Collabera",
-    location: "Morristown, New Jersey, USA",
-  },
-  {
-    role: "Global Head & AVP",
-    detail: "Talent Management COE & OD",
-    org: "Adani Group",
-    location: "Ahmedabad, India",
-  },
-  {
-    role: "Global Head & VP",
-    detail: "Organization Development (OD) & Talent Management",
-    org: "Hitachi Group",
-    location: "McLean, Virginia, USA",
-  },
-  {
-    role: "Head",
-    detail: "Talent and Organization Development",
-    org: "Aditya Birla Minacs",
-    location: "Toronto",
-  },
-  {
-    role: "Global Head",
-    detail: "Talent Assessment & Leadership Development Practice (Infosys Leadership Institute)",
-    org: "Infosys Technologies",
-    location: "Bangalore and Chicago",
-  },
-  {
-    role: "Sr. Manager",
-    detail: "Talent Management & Organization Development (OD)",
-    org: "Capgemini (Patni Computer Systems)",
-    location: "Mumbai and Boston",
-  },
-  {
-    role: "Head",
-    detail: "Individual and Organizational Assessment Centre (IOAC)",
-    org: "Academy of Human Resources Development (AHRD)",
-    location: "Hyderabad",
-  },
-];
+// const career = [
+//   {
+//     role: "Group Head",
+//     detail: "Talent Management and Assessment Practice, Talent COE",
+//     org: "Macy's Inc.",
+//     location: "New York City",
+//   },
+//   {
+//     role: "US Head",
+//     detail: "Global People/Talent Analytics",
+//     org: "Siemens Corporation",
+//     location: "Iselin, New Jersey, USA",
+//   },
+//   {
+//     role: "Global Head",
+//     detail: "Talent Management & Organization Development",
+//     org: "Collabera",
+//     location: "Morristown, New Jersey, USA",
+//   },
+//   {
+//     role: "Global Head & AVP",
+//     detail: "Talent Management COE & OD",
+//     org: "Adani Group",
+//     location: "Ahmedabad, India",
+//   },
+//   {
+//     role: "Global Head & VP",
+//     detail: "Organization Development (OD) & Talent Management",
+//     org: "Hitachi Group",
+//     location: "McLean, Virginia, USA",
+//   },
+//   {
+//     role: "Head",
+//     detail: "Talent and Organization Development",
+//     org: "Aditya Birla Minacs",
+//     location: "Toronto",
+//   },
+//   {
+//     role: "Global Head",
+//     detail: "Talent Assessment & Leadership Development Practice (Infosys Leadership Institute)",
+//     org: "Infosys Technologies",
+//     location: "Bangalore and Chicago",
+//   },
+//   {
+//     role: "Sr. Manager",
+//     detail: "Talent Management & Organization Development (OD)",
+//     org: "Capgemini (Patni Computer Systems)",
+//     location: "Mumbai and Boston",
+//   },
+//   {
+//     role: "Head",
+//     detail: "Individual and Organizational Assessment Centre (IOAC)",
+//     org: "Academy of Human Resources Development (AHRD)",
+//     location: "Hyderabad",
+//   },
+// ];
 
 const focusAreas = [
   "Organizational Diagnostics, Analysis, Report Creation, Key Recommendations, and Action Plans",
@@ -262,7 +262,7 @@ export default function FounderPage() {
         </section>
 
         {/* Career timeline */}
-        <section className={styles.sectionAlt}>
+        {/* <section className={styles.sectionAlt}>
           <div className="container">
             <Reveal className={styles.sectionHeader}>
               <span className={styles.sectionEyebrow}>Career Journey</span>
@@ -290,7 +290,7 @@ export default function FounderPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Consulting focus areas */}
         <section className={styles.section}>
