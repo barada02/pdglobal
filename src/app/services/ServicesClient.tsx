@@ -114,7 +114,7 @@ export default function ServicesClient() {
   return (
     <>
       <Header />
-      
+
       <main className={styles.main}>
         {/* Glow Effects */}
         <div className="glowing-bg" style={{ top: "15%", left: "5%" }}></div>
@@ -143,10 +143,10 @@ export default function ServicesClient() {
               <Reveal className={styles.overviewContent}>
                 <h2 className={styles.overviewTitle}>Built around your business outcomes, not our toolkit.</h2>
                 <p className={styles.overviewText}>
-                  Each cluster below is deployed independently or as an integrated program. We scope every engagement around the commercial outcomes you are accountable for — not a fixed methodology we ask you to adopt.
+                  Each cluster below is deployed independently or as an integrated program depending upon the requirements. We scope every engagement around the business outcomes you are accountable for — not a fixed methodology.
                 </p>
                 <p className={styles.overviewText}>
-                  Explore the five practice areas to see the specific instruments, frameworks, and deliverables involved.
+                  Explore the five practice clusters to see the specific instruments, frameworks, and deliverables involved.
                 </p>
               </Reveal>
               <Reveal delay={120} className={styles.overviewImage}>
@@ -262,7 +262,7 @@ export default function ServicesClient() {
                   <p className={styles.blockDesc}>
                     Individual and organizational item-level responses are aggregated and normalized to a 0-100 scale, mapping directly into four maturity levels:
                   </p>
-                  
+
                   <div className={styles.maturityScale}>
                     <div className={styles.maturityLevel}>
                       <span className={`${styles.levelColor} ${styles.levelEmerging}`}></span>
@@ -271,7 +271,7 @@ export default function ServicesClient() {
                         <span>Traditional, siloed, or high-friction workflows.</span>
                       </div>
                     </div>
-                    
+
                     <div className={styles.maturityLevel}>
                       <span className={`${styles.levelColor} ${styles.levelFoundational}`}></span>
                       <div className={styles.levelInfo}>
@@ -294,6 +294,56 @@ export default function ServicesClient() {
                         <strong>Leading (80–100)</strong>
                         <span>Self-governing synergy with optimized human-AI flow.</span>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* AI Fluency Diagnostic Tool */}
+            <Reveal delay={100} className={styles.aiFluencyBox}>
+              <div className={styles.aiFluencyHeader}>
+                <span className={styles.focusBadge}>Diagnostic Instrument</span>
+                <h2 className={styles.aiFluencyTitle}>AI Fluency Diagnostic Tool</h2>
+                <p className={styles.aiFluencySubtitle}>
+                  <strong>Purpose:</strong> Measure readiness, confidence, responsible use, and day-to-day application of AI.
+                </p>
+              </div>
+
+              <div className={styles.aiFluencyGrid}>
+                <div className={styles.aiPanel}>
+                  <h3 className={styles.aiPanelTitle}>5 Dimensions:</h3>
+                  <ul className={styles.aiDimensionList}>
+                    <li><strong>1. AI Foundations & Concepts</strong></li>
+                    <li><strong>2. Workflow Application & Daily Use</strong></li>
+                    <li><strong>3. Responsible AI, Trust & Judgment</strong></li>
+                    <li><strong>4. Prompting & Interaction Skills</strong></li>
+                    <li><strong>5. Performance Uplift & Adoption Behavior</strong></li>
+                  </ul>
+                </div>
+
+                <div className={styles.aiPanel}>
+                  <h3 className={styles.aiPanelTitle}>ENTERPRISE-LEVEL SCORE (Across All 5 Dimensions):</h3>
+                  <div className={styles.aiScoreList}>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>0-20 — Awareness</span>
+                      <span className={styles.aiScoreDesc}>Minimal understanding; cannot apply independently</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>21-40 — Basic Use</span>
+                      <span className={styles.aiScoreDesc}>Simple tasks with guidance</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>41-60 — Functional Use</span>
+                      <span className={styles.aiScoreDesc}>Independent daily use</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>61-80 — Advanced Use</span>
+                      <span className={styles.aiScoreDesc}>Optimizes workflows; coaches others</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>81-100 — Expert Use</span>
+                      <span className={styles.aiScoreDesc}>Redesigns processes; drives adoption</span>
                     </div>
                   </div>
                 </div>

@@ -180,7 +180,7 @@ export default function About() {
                   His consulting engagements span the United States, Canada, Europe, Australia, and India, delivering business-aligned solutions to global Fortune 500 corporations, mid-sized enterprises, and public institutions.
                 </p>
                 <p className={styles.bioParagraph}>
-                  Dr. Priyadarshi earned his Doctorate in Organizational Psychology from the Tata Institute of Social Sciences (TISS), Mumbai, and pursued postdoctoral research as a scholar at the Massachusetts Institute of Technology (MIT) Sloan School of Management. His research and frameworks focus on bridging design thinking with data analytics to create resilient, future-ready organizations.
+                  Dr. Priyadarshi earned his Doctorate in Organizational Psychology from the Tata Institute of Social Sciences (TISS), Mumbai, and pursued postdoctoral research as a scholar at the Massachusetts Institute of Technology (MIT) Sloan School of Management.
                 </p>
                 <Link href="/founder" className={styles.knowMoreBtn}>
                   Know more <span className="arrow">&rarr;</span>

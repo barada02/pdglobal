@@ -123,7 +123,7 @@ export default function ApproachClient() {
               <Reveal delay={120} className={styles.overviewContent}>
                 <h2 className={styles.overviewTitle}>Five phases. One continuous dialogue.</h2>
                 <p className={styles.overviewText}>
-                  We do not hand off a report and disappear. Each phase below builds on the last, with your leadership team involved at every calibration point — from initial discovery through post-intervention measurement.
+                  Each phase below builds on the last, with your leadership team involved at every calibration point — from initial discovery through post-intervention measurement.
                 </p>
                 <p className={styles.overviewText}>
                   Select a phase to see the activities, deliverables, and time-scale involved.

@@ -75,7 +75,7 @@ export default function ContactClient() {
               <span className={styles.subtitle}>Get in Touch</span>
               <h1 className={styles.title}>Let&apos;s Start a Conversation</h1>
               <p className={styles.lead}>
-                Partner with us to deploy people science and advanced talent analytics to accelerate your organization&apos;s potential.
+                Partner with us to co-create and deploy people science and evidence-based Talent and Organization Effectiveness solutions to accelerate your organization&apos;s potential and growth.
               </p>
             </Reveal>
           </div>
