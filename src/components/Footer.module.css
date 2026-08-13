@@ -183,7 +183,7 @@
 .confidentiality {
   font-style: italic;
   text-align: right;
-  max-width: 50%;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {

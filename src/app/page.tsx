@@ -32,8 +32,8 @@ export default function Home() {
     },
     {
       num: "05",
-      title: "People & Talent Analytics",
-      desc: "Turn workforce data into strategic business value using advanced reporting, predictive attrition modeling, employee listening surveys, and Generative AI.",
+      title: "People & Talent Analytics, AI-Application",
+      desc: "HR data, predictive modeling, employee listening & experience, and Generative AI applications.",
     },
   ];
 
