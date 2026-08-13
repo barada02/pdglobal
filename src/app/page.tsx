@@ -58,7 +58,7 @@ export default function Home() {
                   Architecting & Accelerating Organizations
                 </h1>
                 <p className={styles.heroSubtitle}>
-                  PEOPLE-SCIENCE BASED &middot; TALENT & ORGANIZATION EFFECTIVENESS &middot; ANALYTICS & AI DRIVEN
+                  PEOPLE-SCIENCE BASED &middot; ANALYTICS & AI DRIVEN
                 </p>
 
                 {/* Quote Card */}
