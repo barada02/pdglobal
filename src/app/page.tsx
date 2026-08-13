@@ -118,16 +118,20 @@ export default function Home() {
           <div className="container">
             <div className={styles.introGrid}>
               <Reveal className={styles.introLeft}>
+                <span className={styles.sectionEyebrow}>O U R &nbsp; M A N T R A</span>
                 <h2 className={styles.sectionTitle}>
-                  Bridging organizational potential and performance.
+                  Our success depends on your success.
                 </h2>
               </Reveal>
               <Reveal delay={120} className={styles.introRight}>
                 <p className={styles.bodyText}>
-                  Performance Dimensions Global (PDG) is a People-science based global Talent and Organization Effectiveness consulting firm. We partner with you to co-create and execute business outcome–oriented processes for superior performance.
+                  Performance Dimensions Global (PDG) is a People-science based global Talent and Organization Effectiveness consulting firm. We partner with you to co-create and execute business outcome–oriented Talent and Organization Development processes for superior performance by leveraging analytics, AI, and a data-driven approach.
                 </p>
                 <p className={styles.bodyText}>
-                  We bring fresh perspectives and deep domain expertise grounded in rigorous research, benchmarks, and best-in-class case studies.
+                  We bring fresh perspectives and domain expertise grounded in research &amp; practice, benchmarks, and best-in-class case studies. We are the talent and organizational effectiveness Subject-matter experts, diagnosticians and process consultants who provide custom solutions for effective implementation in achieving key business goals.
+                </p>
+                <p className={styles.bodyText}>
+                  Our focus is on client&rsquo;s achievement by making companies as successful and learning organizations.
                 </p>
                 <Link href="/about" className={styles.textLink}>
                   Learn more about our vision and values <span className="arrow">&rarr;</span>
