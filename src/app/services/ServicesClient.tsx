@@ -114,7 +114,7 @@ export default function ServicesClient() {
   return (
     <>
       <Header />
-      
+
       <main className={styles.main}>
         {/* Glow Effects */}
         <div className="glowing-bg" style={{ top: "15%", left: "5%" }}></div>
@@ -143,10 +143,10 @@ export default function ServicesClient() {
               <Reveal className={styles.overviewContent}>
                 <h2 className={styles.overviewTitle}>Built around your business outcomes, not our toolkit.</h2>
                 <p className={styles.overviewText}>
-                  Each cluster below is deployed independently or as an integrated program. We scope every engagement around the commercial outcomes you are accountable for — not a fixed methodology we ask you to adopt.
+                  Each cluster below is deployed independently or as an integrated program depending upon the requirements. We scope every engagement around the business outcomes you are accountable for — not a fixed methodology.
                 </p>
                 <p className={styles.overviewText}>
-                  Explore the five practice areas to see the specific instruments, frameworks, and deliverables involved.
+                  Explore the five practice clusters to see the specific instruments, frameworks, and deliverables involved.
                 </p>
               </Reveal>
               <Reveal delay={120} className={styles.overviewImage}>
@@ -262,7 +262,7 @@ export default function ServicesClient() {
                   <p className={styles.blockDesc}>
                     Individual and organizational item-level responses are aggregated and normalized to a 0-100 scale, mapping directly into four maturity levels:
                   </p>
-                  
+
                   <div className={styles.maturityScale}>
                     <div className={styles.maturityLevel}>
                       <span className={`${styles.levelColor} ${styles.levelEmerging}`}></span>
@@ -271,7 +271,7 @@ export default function ServicesClient() {
                         <span>Traditional, siloed, or high-friction workflows.</span>
                       </div>
                     </div>
-                    
+
                     <div className={styles.maturityLevel}>
                       <span className={`${styles.levelColor} ${styles.levelFoundational}`}></span>
                       <div className={styles.levelInfo}>
