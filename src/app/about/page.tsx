@@ -100,6 +100,27 @@ export default function About() {
           </div>
         </section>
 
+        {/* Values Section */}
+        <section className={styles.valuesSection}>
+          <div className="container">
+            <Reveal className={styles.sectionHeader}>
+              <h2 className={styles.sectionTitle}>Our Core Values</h2>
+              <p className={styles.sectionSubtitle}>
+                The principles that guide our client relationships, solution designs, and daily practice.
+              </p>
+            </Reveal>
+
+            <div className={styles.valuesGrid}>
+              {values.map((val, idx) => (
+                <Reveal as="div" key={val.title} delay={idx * 80} className={styles.valueCard}>
+                  <h3 className={styles.valueTitle}>{val.title}</h3>
+                  <p className={styles.valueDesc}>{val.desc}</p>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Global Impact Section */}
         <section className={styles.impactSection}>
           <div className="container">
@@ -121,27 +142,6 @@ export default function About() {
                   Every diagnostic, model, and intervention is built in partnership with your internal teams, not delivered off a shelf. That is how trust is earned with organizations operating across borders and cultures.
                 </p>
               </Reveal>
-            </div>
-          </div>
-        </section>
-
-        {/* Values Section */}
-        <section className={styles.valuesSection}>
-          <div className="container">
-            <Reveal className={styles.sectionHeader}>
-              <h2 className={styles.sectionTitle}>Our Core Values</h2>
-              <p className={styles.sectionSubtitle}>
-                The principles that guide our client relationships, solution designs, and daily practice.
-              </p>
-            </Reveal>
-
-            <div className={styles.valuesGrid}>
-              {values.map((val, idx) => (
-                <Reveal as="div" key={val.title} delay={idx * 80} className={styles.valueCard}>
-                  <h3 className={styles.valueTitle}>{val.title}</h3>
-                  <p className={styles.valueDesc}>{val.desc}</p>
-                </Reveal>
-              ))}
             </div>
           </div>
         </section>
@@ -177,10 +177,10 @@ export default function About() {
                   Himank Priyadarshi, Ph.D., has over 30 years of practice, research, training, and consultancy in People Science, Skills-based Organization (SBO), Org. Design & Effectiveness, AI Workforce Strategy & Organization Transformation, Talent Management & Assessment, and People Analytics.
                 </p>
                 <p className={styles.bioParagraph}>
-                  His consulting engagements span the United States, Canada, Europe, Australia, and India, delivering business-aligned solutions to global Fortune 500 corporations, mid-sized enterprises, and public institutions.
+                  His consulting engagements span the United States, India, Canada, Europe, Australia, and Latin-America delivering business-aligned solutions to global Fortune 500 corporations, mid-sized enterprises, and public institutions.
                 </p>
                 <p className={styles.bioParagraph}>
-                  Dr. Priyadarshi earned his Doctorate in Organizational Psychology from the Tata Institute of Social Sciences (TISS), Mumbai, and pursued postdoctoral research as a scholar at the Massachusetts Institute of Technology (MIT) Sloan School of Management.
+                  Dr. Priyadarshi earned his Doctorate in Organizational Psychology from the Tata Institute of Social Sciences (TISS), Mumbai, and pursued postdoctoral research at Sloan School of Management, Massachusetts Institute of Technology (MIT), Boston. His research and frameworks focus on bridging design thinking with data analytics to create resilient, future-ready organizations.
                 </p>
                 <Link href="/founder" className={styles.knowMoreBtn}>
                   Know more <span className="arrow">&rarr;</span>
