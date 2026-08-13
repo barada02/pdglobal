@@ -99,10 +99,10 @@ export default function ApproachClient() {
           </div>
           <div className="container">
             <Reveal>
-              <span className={styles.subtitle}>Methodology</span>
+              <span className={styles.subtitle}>Approach</span>
               <h1 className={styles.title}>Our Engagement Model</h1>
               <p className={styles.lead}>
-                A diagnostic, solutions-led engagement methodology designed to co-create sustainable organizational value.
+                A diagnostic & solutions-led engagement model.
               </p>
             </Reveal>
           </div>

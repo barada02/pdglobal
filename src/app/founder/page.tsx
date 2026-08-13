@@ -174,9 +174,19 @@ const publications = [
     date: "September 1998",
   },
   {
-    title: "Future-Ready Work Characteristics Model (FRWCM) & Workforce of Future Index (WFI)",
-    outlet: "Under Publication",
-    date: "",
+    title: "Future-Ready Work Characteristics Model (FRWCM): An integrated, diagnostic and operating framework for designing and evaluating work systems in the AI-augmented enterprise",
+    outlet: "LinkedIn",
+    date: "April 2026",
+  },
+  {
+    title: "Work Mutation Theory (WMT): A New Paradigm for Understanding AI-Driven Discontinuities in Workforce Strategy and Work Design",
+    outlet: "LinkedIn",
+    date: "July 2026",
+  },
+  {
+    title: "Organizational Psychology through the lens of Quantum Mechanics in the era of AI",
+    outlet: "LinkedIn",
+    date: "August 2026",
   },
 ];
 
