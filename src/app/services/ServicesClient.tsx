@@ -299,6 +299,56 @@ export default function ServicesClient() {
                 </div>
               </div>
             </Reveal>
+
+            {/* AI Fluency Diagnostic Tool */}
+            <Reveal delay={100} className={styles.aiFluencyBox}>
+              <div className={styles.aiFluencyHeader}>
+                <span className={styles.focusBadge}>Diagnostic Instrument</span>
+                <h2 className={styles.aiFluencyTitle}>AI Fluency Diagnostic Tool</h2>
+                <p className={styles.aiFluencySubtitle}>
+                  <strong>Purpose:</strong> Measure readiness, confidence, responsible use, and day-to-day application of AI.
+                </p>
+              </div>
+
+              <div className={styles.aiFluencyGrid}>
+                <div className={styles.aiPanel}>
+                  <h3 className={styles.aiPanelTitle}>5 Dimensions:</h3>
+                  <ul className={styles.aiDimensionList}>
+                    <li><strong>1. AI Foundations & Concepts</strong></li>
+                    <li><strong>2. Workflow Application & Daily Use</strong></li>
+                    <li><strong>3. Responsible AI, Trust & Judgment</strong></li>
+                    <li><strong>4. Prompting & Interaction Skills</strong></li>
+                    <li><strong>5. Performance Uplift & Adoption Behavior</strong></li>
+                  </ul>
+                </div>
+
+                <div className={styles.aiPanel}>
+                  <h3 className={styles.aiPanelTitle}>ENTERPRISE-LEVEL SCORE (Across All 5 Dimensions):</h3>
+                  <div className={styles.aiScoreList}>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>0-20 — Awareness</span>
+                      <span className={styles.aiScoreDesc}>Minimal understanding; cannot apply independently</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>21-40 — Basic Use</span>
+                      <span className={styles.aiScoreDesc}>Simple tasks with guidance</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>41-60 — Functional Use</span>
+                      <span className={styles.aiScoreDesc}>Independent daily use</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>61-80 — Advanced Use</span>
+                      <span className={styles.aiScoreDesc}>Optimizes workflows; coaches others</span>
+                    </div>
+                    <div className={styles.aiScoreItem}>
+                      <span className={styles.aiScoreHeader}>81-100 — Expert Use</span>
+                      <span className={styles.aiScoreDesc}>Redesigns processes; drives adoption</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </section>
       </main>
