@@ -13,22 +13,22 @@ export default function Home() {
     {
       num: "01",
       title: "Talent Management & Strategic HRM",
-      desc: "Connect business strategy to people decisions with competency models, BARS-based systems, skills frameworks, and robust succession pipelines.",
+      desc: "Delivers future-ready leaders, high-performing teams, and a workforce engineered to accelerate business growth and execution.",
     },
     {
       num: "02",
       title: "Talent & Leadership Assessment",
-      desc: "Deploy scientifically validated tools for selection and development, including custom business simulations, 360° reviews, and executive psychometrics.",
+      desc: "Enables precise identification of leadership strengths, role fit, and future-ready capability, so organizations can make confident, high-impact talent decisions that enhance business performance.",
     },
     {
       num: "03",
       title: "Organization Effectiveness & Workforce of Future",
-      desc: "Reshape organizational structures and modernize workflows through organizational health diagnostics and the Future Ready Work Characteristics Model.",
+      desc: "Builds Skills-based Organization (SBO), Workforce of Future, Org. Diagnostics, Org. Design that accelerate execution, adaptability, and long-term business growth.",
     },
     {
       num: "04",
       title: "Learning & Leadership Development",
-      desc: "Build compounding capabilities at every level of management through custom leadership curriculums, mentoring systems, and Kirkpatrick impact evaluations.",
+      desc: "Builds capable, confident leaders and a continuously learning workforce that excels in execution and strengthens culture to drive sustained business growth.",
     },
     {
       num: "05",
@@ -160,7 +160,7 @@ export default function Home() {
             <Reveal className={styles.capabilitiesHeader}>
               <h2 className={styles.sectionTitleCenter}>Core Practice Areas</h2>
               <p className={styles.sectionSubtitleCenter}>
-                An integrated portfolio spanning the full talent and organizational lifecycle.
+                An integrated portfolio spanning the full talent and organization lifecycle — from strategy and assessment to development, implementation, change, and analytics.
               </p>
             </Reveal>
 

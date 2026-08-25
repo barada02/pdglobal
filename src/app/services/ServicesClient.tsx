@@ -44,23 +44,22 @@ export default function ServicesClient() {
       title: "Talent & Leadership Assessment",
       tagline: "Selection and developmental assessments — psychometrics, simulations, 360°, assessment centres.",
       items: [
-        "Structured interview guides — Behavioral Event Interviews (BEI)",
-        "Business simulation — In-basket / Inbox exercises",
+        "Assessment / Development Centers — design and delivery",
+        "Business Simulation Exercises (Inbox)",
+        "360° assessment and feedback",
+        "Psychometrics: CPI, 16-PF, OPQ, Hogan MVPI, HDS",
+        "Leadership Style Inventory / Leadership Index",
+        "MCAI for development needs identification",
+        "Personal Effectiveness (PE) Assessment Tool",
+        "Motivational Analysis of Organization Style (MAO-S)",
         "Situational Judgment Exercises",
-        "Assessment Centers",
-        "Psychometrics: CPI, OPQ, 16-PF, Hogan MVPI",
-        "Managerial Capability Assessment Inventory (MCAI)",
+        "Structured interview guides — Behavioral Event Interviews (BEI)",
         "Reliability, validity & standardization analysis",
         "Adverse impact analysis — EEOC compliance",
         "Training for TA teams and hiring managers on assessment tools",
-        "Assessment / Development Centers — design and delivery",
-        "360° assessment and feedback",
-        "Leadership Style Inventory / Leadership Index",
-        "Personal Effectiveness (PE) Assessment Tool",
-        "Motivational Analysis of Organization Style (MAO-S)",
-        "Delegation Assessment Questionnaire (DAQ)",
-        "Competency Assessment Tools — decision style, networking style",
+        "Competency Assessment Tools — Decision style, Networking style",
         "DEI tools — Intercultural Conflict Style & Development Inventory",
+        "Delegation Assessment Questionnaire (DAQ)",
       ],
     },
     {
@@ -72,10 +71,10 @@ export default function ServicesClient() {
         "Organization Design, Operating model & Structure",
         "Work / job design",
         "Workforce of the Future strategy",
-        "Skills-based Organization (SBO)",
-        "Culture and climate measurement",
         "Workflows & Future Ready Work Characteristic Model",
-        "Engagement measurement and Employee NPS",
+        "AI Fluency Diagnostics",
+        "Org. Culture and climate measurement",
+        "Engagement measurement and Employee NPS, Net Engagement Score (NES)",
         "Employee listening and Experience, Equity Variance Index (EVI)",
         "Support function effectiveness analysis",
         "Organizational Agility measurement",
@@ -90,14 +89,12 @@ export default function ServicesClient() {
       tagline: "Building capability that compounds — at every level of the organization.",
       items: [
         "Leadership development systems & strategies",
-        "Leadership / managerial Assessment & Development Centers",
-        "360° feedback and Individual Development Plans (IDPs)",
+        "Leadership Competency Development Centers (LCDC)",
+        "Leadership Compass: 360° feedback and Individual Development Plans (IDPs)",
         "Learning & Development strategy and needs identification",
-        "Mentoring & coaching framework — MAP, evaluation",
-        "Construction of psychometric and competency assessment tools",
+        "Mentoring & coaching framework — MAP",
         "Leadership assessment — BEI, simulations, CPI, TAT, projective",
-        "Impact evaluation via the Kirkpatrick Model",
-        "Career-fit guidance — \"Does Consulting Suit You?\"",
+        "Impact evaluation through the Kirkpatrick Model",
       ],
     },
     {
@@ -114,8 +111,7 @@ export default function ServicesClient() {
         "HR metrics, KPIs, standard reporting and dashboards",
         "Advanced reporting",
         "Text analytics & data mining (NLP via IBM SPSS Modeler)",
-        "Employee listening — engagement and Employee life-cycle surveys",
-        "Impact assessment and business value measurement",
+        "Employee listening — Engagement Analytics and Employee life-cycle surveys",
         "Generative AI applications for talent management",
       ],
     },
@@ -140,7 +136,7 @@ export default function ServicesClient() {
               <span className={styles.subtitle}>Capabilities & Services</span>
               <h1 className={styles.title}>Our Practice Clusters</h1>
               <p className={styles.lead}>
-                An integrated portfolio of people science, assessment engines, and analytics consulting to accelerate organization maturity.
+                An integrated portfolio spanning the full talent and organization lifecycle — from strategy and assessment to development, implementation, change, and analytics.
               </p>
             </Reveal>
           </div>
@@ -153,10 +149,10 @@ export default function ServicesClient() {
               <Reveal className={styles.overviewContent}>
                 <h2 className={styles.overviewTitle}>Built around your business outcomes, not our toolkit.</h2>
                 <p className={styles.overviewText}>
-                  Each cluster below is deployed independently or as an integrated program depending upon the requirements. We scope every engagement around the business commercial outcomes you are accountable for — not a fixed methodology we ask you to adopt.
+                  Each cluster below is deployed independently or as an integrated program depending upon the requirements. We scope every engagement around the business outcomes you are accountable for — not a fixed methodology.
                 </p>
                 <p className={styles.overviewText}>
-                  Explore the five practice clusters areas to see the specific instruments, frameworks, and deliverables involved.
+                  Explore the five practice clusters to see the nature of engagement needed.
                 </p>
               </Reveal>
               <Reveal delay={120} className={styles.overviewImage}>

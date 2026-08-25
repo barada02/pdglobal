@@ -13,6 +13,30 @@ export default function InsightsClient() {
 
   const publications = [
     {
+      date: "AUG 2026",
+      journal: "LinkedIn",
+      title: "Organizational Psychology through the lens of Quantum Mechanics in the era of AI",
+      category: "Future of Workforce",
+      teaser:
+        "Applying the lens of quantum mechanics to organizational psychology, reframing how we understand behavior, uncertainty, and change in the era of AI.",
+    },
+    {
+      date: "JUL 2026",
+      journal: "LinkedIn",
+      title: "Work Mutation Theory (WMT): A New Paradigm for Understanding AI-Driven Discontinuities in Workforce Strategy and Work Design",
+      category: "Future of Workforce",
+      teaser:
+        "A new paradigm examining how AI-driven discontinuities are reshaping workforce strategy, work design, and organizational adaptation.",
+    },
+    {
+      date: "APR 2026",
+      journal: "LinkedIn",
+      title: "Future-Ready Work Characteristics Model (FRWCM): An integrated, diagnostic and operating framework for designing and evaluating work systems in the AI-augmented enterprise.",
+      category: "Future of Workforce",
+      teaser:
+        "Introducing an integrated diagnostic and operating framework for designing, measuring, and evolving work systems in the AI-augmented enterprise.",
+    },
+    {
       date: "APR 2025",
       journal: "European Journal of Business and Management",
       title: "Net Engagement Score (NES): An Effective Model for Measuring Employee Engagement",
@@ -72,6 +96,7 @@ export default function InsightsClient() {
 
   const categories = [
     "All",
+    "Future of Workforce",
     "Employee Engagement",
     "Talent Assessments",
     "Succession Management",
@@ -109,21 +134,18 @@ export default function InsightsClient() {
               <span className={styles.subtitle}>Research & Publications</span>
               <h1 className={styles.title}>Insights & Thought Leadership</h1>
               <p className={styles.lead}>
-                Selected academic research, journal publications, and thought leadership articles in talent analytics and people science.
+                Selected academic research, journal publications, and thought leadership in Talent analytics, Future of workforce, Employee engagement, Succession management, and Assessment.
               </p>
             </Reveal>
           </div>
         </section>
 
         {/* Overview Section */}
-        <section className={styles.overviewSection}>
+        {/* <section className={styles.overviewSection}>
           <div className="container">
             <div className={styles.overviewGrid}>
               <Reveal className={styles.overviewContent}>
                 <h2 className={styles.overviewTitle}>Research-backed, not opinion-backed.</h2>
-                <p className={styles.overviewText}>
-                  Our published research and frameworks — including the Net Engagement Score (NES) and the Future Ready Work Characteristics Model (FRWCM) — are grounded in peer-reviewed methodology and two decades of applied consulting data.
-                </p>
               </Reveal>
               <Reveal delay={120} className={styles.overviewImage}>
                 <EditorialImage
@@ -135,7 +157,7 @@ export default function InsightsClient() {
               </Reveal>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Search & Filter section */}
         <section className={styles.archiveSection}>
