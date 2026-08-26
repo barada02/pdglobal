@@ -202,7 +202,7 @@ export default function ContactClient() {
 
                     <div className={styles.row}>
                       <div className={styles.formGroup}>
-                        <label htmlFor="email" className={styles.label}>Corporate Email</label>
+                        <label htmlFor="email" className={styles.label}>Email</label>
                         <input
                           type="email"
                           id="email"
@@ -231,7 +231,7 @@ export default function ContactClient() {
                     </div>
 
                     <div className={styles.formGroup}>
-                      <label htmlFor="interest" className={styles.label}>Area of Strategic Interest</label>
+                      <label htmlFor="interest" className={styles.label}>Area of Specific Interest</label>
                       <select
                         id="interest"
                         name="interest"
