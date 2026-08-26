@@ -316,6 +316,13 @@
   line-height: 1.6;
 }
 
+.bodyLabel {
+  color: var(--foreground);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: -0.75rem;
+}
+
 .textLink {
   color: var(--primary);
   font-weight: 600;

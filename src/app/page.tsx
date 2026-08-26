@@ -124,14 +124,13 @@ export default function Home() {
                 </h2>
               </Reveal>
               <Reveal delay={120} className={styles.introRight}>
+                <p className={styles.bodyLabel}>WHO we are and WHAT we do</p>
                 <p className={styles.bodyText}>
-                  Performance Dimensions Global (PDG) is a People-science based global Talent and Organization Effectiveness consulting firm. We partner with you to co-create and execute business outcome–oriented Talent and Organization Development processes for superior performance by leveraging analytics, AI, and a data-driven approach.
+                  Performance Dimensions Global (PDG) is a People-science based global Talent and Organization Effectiveness consulting firm. PDG strengthens client&rsquo;s Talent and Organization Effectiveness by designing and enabling business&#8209;aligned people processes that drive measurable performance outcomes. We provide research-backed insights, diagnostics, and customized solutions that help organizations become high-performing, learning-focused, and future-ready.
                 </p>
+                <p className={styles.bodyLabel}>HOW we do it</p>
                 <p className={styles.bodyText}>
-                  We bring fresh perspectives and domain expertise grounded in research &amp; practice, benchmarks, and best-in-class case studies. We are the talent and organizational effectiveness Subject-matter experts, diagnosticians and process consultants who provide custom solutions for effective implementation in achieving key business goals.
-                </p>
-                <p className={styles.bodyText}>
-                  Our focus is on client&rsquo;s achievement by making companies as successful and learning organizations.
+                  We partner closely with clients to co&#8209;create and implement talent and organizational development solutions using analytics, AI, and a data&#8209;driven approach. Our team brings deep domain expertise, benchmarks, and best&#8209;in&#8209;class practices to deliver tailored interventions. Through rigorous diagnosis, people&#8209;science methodologies, and effective process consulting, we ensure solutions are practical, scalable, and aligned to key business goals.
                 </p>
                 <Link href="/about" className={styles.textLink}>
                   Learn more about our vision and values <span className="arrow">&rarr;</span>
