@@ -31,11 +31,11 @@ export default function About() {
     },
     {
       title: "Collaboration",
-      desc: "We do not believe in off-the-shelf templates. We co-design all of our diagnostics and solutions in close partnership with your internal teams.",
+      desc: "We co-design all of our diagnostics and solutions in close partnership with your internal teams.",
     },
     {
       title: "Innovation",
-      desc: "We actively incorporate the latest research, analytics methods, and Generative AI tools to solve complex, modern workforce challenges.",
+      desc: "We actively incorporate the latest research, best-practices, analytics methods, and Generative AI tools to solve complex, modern workforce challenges.",
     },
   ];
 
@@ -58,7 +58,7 @@ export default function About() {
               <span className={styles.subtitle}>Who We Are</span>
               <h1 className={styles.title}>About Performance Dimensions Global</h1>
               <p className={styles.lead}>
-                A global talent and organizational effectiveness consulting firm bridging people science, analytics, and business execution.
+                A People-science based global Talent and Organization Effectiveness consulting firm which bridges the gap between organizational potential and performance.
               </p>
             </Reveal>
           </div>
@@ -139,7 +139,7 @@ export default function About() {
                   Our engagements span manufacturing, engineering, IT, retail, financial services, and healthcare organizations across North America, Europe, India, and Australia — ranging from $500M enterprises to $105B global corporations.
                 </p>
                 <p className={styles.mvText}>
-                  Every diagnostic, model, and intervention is built in partnership with your internal teams, not delivered off a shelf. That is how trust is earned with organizations operating across borders and cultures.
+                  Every diagnostic, model, and intervention is built in partnership with your internal teams, not delivered off a shelf.
                 </p>
               </Reveal>
             </div>
@@ -180,7 +180,7 @@ export default function About() {
                   His consulting engagements span the United States, India, Canada, Europe, Australia, and Latin-America delivering business-aligned solutions to global Fortune 500 corporations, mid-sized enterprises, and public institutions.
                 </p>
                 <p className={styles.bioParagraph}>
-                  Dr. Priyadarshi earned his Doctorate in Organizational Psychology from the Tata Institute of Social Sciences (TISS), Mumbai, and pursued postdoctoral research at Sloan School of Management, Massachusetts Institute of Technology (MIT), Boston. His research and frameworks focus on bridging design thinking with data analytics to create resilient, future-ready organizations.
+                  Dr. Priyadarshi earned his Doctorate in Organizational Psychology from the Tata Institute of Social Sciences (TISS), Mumbai, and pursued postdoctoral research at Sloan School of Management, Massachusetts Institute of Technology (MIT), Boston.
                 </p>
                 <Link href="/founder" className={styles.knowMoreBtn}>
                   Know more <span className="arrow">&rarr;</span>
