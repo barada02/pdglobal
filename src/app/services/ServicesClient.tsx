@@ -27,8 +27,7 @@ export default function ServicesClient() {
       tagline: "Integrated, competency-based systems that connect Business strategy to people decisions and actions.",
       items: [
         "Competency Models — Techno-functional, Behavioral, Digital, Organizational",
-        "Behaviorally Anchored Rating Scales (BARS)",
-        "Integrated HRM: Talent acquisition, Performance, Learning, Succession",
+        "Behaviorally Anchored Rating Scales (BARS) Integrated HRM: Talent acquisition, Performance, Learning, Succession",
         "Skills-based Organization (SBO) and Skills frameworks & Ontology",
         "Job Architecture, Job & position analysis, Descriptions",
         "Talent Review and Calibration",
