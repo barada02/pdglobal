@@ -7,6 +7,15 @@ import OrgNetworkVisual from "@/components/OrgNetworkVisual";
 import EditorialImage from "@/components/EditorialImage";
 import styles from "./services.module.css";
 
+function splitIntoColumns(items: string[], columnCount: number): string[][] {
+  const perColumn = Math.ceil(items.length / columnCount);
+  const columns: string[][] = [];
+  for (let i = 0; i < columnCount; i++) {
+    columns.push(items.slice(i * perColumn, (i + 1) * perColumn));
+  }
+  return columns;
+}
+
 export default function ServicesClient() {
   const [activeTab, setActiveTab] = useState("01");
 
@@ -25,6 +34,7 @@ export default function ServicesClient() {
       id: "01",
       title: "Talent Management & Strategic HRM",
       tagline: "Integrated, competency-based systems that connect Business strategy to people decisions and actions.",
+      columnCount: 2,
       items: [
         "Competency Models — Techno-functional, Behavioral, Digital, Organizational",
         "Behaviorally Anchored Rating Scales (BARS) Integrated HRM: Talent acquisition, Performance, Learning, Succession",
@@ -41,7 +51,11 @@ export default function ServicesClient() {
     {
       id: "02",
       title: "Talent & Leadership Assessment - for Development and Selection",
-      tagline: "Selection and developmental assessments — psychometrics, simulations, 360°, assessment centres.",
+      tagline: [
+        "Diagnostic instruments that surface developmental priorities and accelerate growth",
+        "Robust, evidence-based tools for the talent acquisition and selection process",
+      ],
+      columnCount: 2,
       items: [
         "Assessment / Development Centers — design and delivery",
         "Business Simulation Exercises (Inbox)",
@@ -65,6 +79,7 @@ export default function ServicesClient() {
       id: "03",
       title: "Organization Effectiveness & Workforce of Future",
       tagline: "Structured interventions that reshape how organizations operate and adapt in AI Era.",
+      columnCount: 2,
       items: [
         "Organization Diagnostics & Health Studies (OHS)",
         "Organization Design, Operating model & Structure",
@@ -86,6 +101,7 @@ export default function ServicesClient() {
       id: "04",
       title: "Organizational Learning & Leadership Development",
       tagline: "Building capability that compounds — at every level of the organization.",
+      columnCount: 1,
       items: [
         "Leadership development systems & strategies",
         "Leadership Competency Development Centers (LCDC)",
@@ -100,6 +116,7 @@ export default function ServicesClient() {
       id: "05",
       title: "People & Talent Analytics",
       tagline: "Turning workforce data into business value — analytics, AI, and decision intelligence.",
+      columnCount: 2,
       items: [
         "People Analytics and Predictive Modeling",
         "HR data management",
@@ -191,18 +208,35 @@ export default function ServicesClient() {
                     <div className={styles.panelHeader}>
                       <span className={styles.panelNum}>{c.id}</span>
                       <h2 className={styles.panelTitle}>{c.title}</h2>
-                      <p className={styles.panelTagline}>{c.tagline}</p>
+                      {Array.isArray(c.tagline) ? (
+                        <ul className={styles.panelTaglineList}>
+                          {c.tagline.map((line, idx) => (
+                            <li key={idx} className={styles.panelTaglineItem}>
+                              {line}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className={styles.panelTagline}>{c.tagline}</p>
+                      )}
                     </div>
 
-                    <div className={styles.panelItemsGrid}>
-                      {c.items.map((item, idx) => (
-                        <div key={idx} className={styles.serviceItemCard}>
-                          <div className={styles.bulletIcon}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </div>
-                          <span className={styles.serviceText}>{item}</span>
+                    <div
+                      className={styles.panelItemsGrid}
+                      style={{ gridTemplateColumns: `repeat(${c.columnCount}, 1fr)` }}
+                    >
+                      {splitIntoColumns(c.items, c.columnCount).map((column, colIdx) => (
+                        <div key={colIdx} className={styles.panelColumn}>
+                          {column.map((item, idx) => (
+                            <div key={idx} className={styles.serviceItemCard}>
+                              <div className={styles.bulletIcon}>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                  <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                              </div>
+                              <span className={styles.serviceText}>{item}</span>
+                            </div>
+                          ))}
                         </div>
                       ))}
                     </div>
