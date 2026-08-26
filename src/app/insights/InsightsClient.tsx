@@ -13,52 +13,12 @@ export default function InsightsClient() {
 
   const publications = [
     {
-      date: "AUG 2026",
-      journal: "LinkedIn",
-      title: "Organizational Psychology through the lens of Quantum Mechanics in the era of AI",
-      category: "Future of Workforce",
-      teaser:
-        "Applying the lens of quantum mechanics to organizational psychology, reframing how we understand behavior, uncertainty, and change in the era of AI.",
-    },
-    {
-      date: "JUL 2026",
-      journal: "LinkedIn",
-      title: "Work Mutation Theory (WMT): A New Paradigm for Understanding AI-Driven Discontinuities in Workforce Strategy and Work Design",
-      category: "Future of Workforce",
-      teaser:
-        "A new paradigm examining how AI-driven discontinuities are reshaping workforce strategy, work design, and organizational adaptation.",
-    },
-    {
       date: "APR 2026",
       journal: "LinkedIn",
       title: "Future-Ready Work Characteristics Model (FRWCM): An integrated, diagnostic and operating framework for designing and evaluating work systems in the AI-augmented enterprise.",
       category: "Future of Workforce",
       teaser:
         "Introducing an integrated diagnostic and operating framework for designing, measuring, and evolving work systems in the AI-augmented enterprise.",
-    },
-    {
-      date: "APR 2025",
-      journal: "European Journal of Business and Management",
-      title: "Net Engagement Score (NES): An Effective Model for Measuring Employee Engagement",
-      category: "Employee Engagement",
-      teaser:
-        "Proposing a unified index (NES) to assess critical dimensions of workforce alignment and motivation, optimizing traditional survey frameworks for high-frequency measurements.",
-    },
-    {
-      date: "JUL 2024",
-      journal: "People Matters",
-      title: "Beware of the S.T.A.R Method — it may not get you the STAR performers on the job",
-      category: "Talent Assessments",
-      teaser:
-        "A critical evaluation of structured behavioral interviewing techniques, discussing limitations in predicting executive performance and recommending simulation-based alternates.",
-    },
-    {
-      date: "FEB 2024",
-      journal: "People Matters",
-      title: "How 'critical' are critical positions for succession management effectiveness",
-      category: "Succession Management",
-      teaser:
-        "Examining structural risks in succession modeling, showing why organizations over-index on specific roles and offering a skills-based liquidity approach to pipeline continuity.",
     },
     {
       date: "AUG 2019",
@@ -69,12 +29,36 @@ export default function InsightsClient() {
         "Bridging quantitative people metrics with user-centric workflows to design cohesive employee experiences that drive organizational performance and reduce attrition.",
     },
     {
-      date: "JAN 2005",
-      journal: "National HRD Network Newsletter",
-      title: "Assessment Centre: Beyond the Corporate Domain",
+      date: "APR 2025",
+      journal: "European Journal of Business and Management",
+      title: "Net Engagement Score (NES): An Effective Model for Measuring Employee Engagement",
+      category: "Employee Engagement",
+      teaser:
+        "Proposing a unified index (NES) to assess critical dimensions of workforce alignment and motivation, optimizing traditional survey frameworks for high-frequency measurements.",
+    },
+    {
+      date: "FEB 2024",
+      journal: "People Matters",
+      title: "How 'critical' are critical positions for succession management effectiveness",
+      category: "Succession Management",
+      teaser:
+        "Examining structural risks in succession modeling, showing why organizations over-index on specific roles and offering a skills-based liquidity approach to pipeline continuity.",
+    },
+    {
+      date: "JUL 2026",
+      journal: "LinkedIn",
+      title: "Work Mutation Theory (WMT): A New Paradigm for Understanding AI-Driven Discontinuities in Workforce Strategy and Work Design",
+      category: "Future of Workforce",
+      teaser:
+        "A new paradigm examining how AI-driven discontinuities are reshaping workforce strategy, work design, and organizational adaptation.",
+    },
+    {
+      date: "JUL 2024",
+      journal: "People Matters",
+      title: "Beware of the S.T.A.R Method — it may not get you the STAR performers on the job",
       category: "Talent Assessments",
       teaser:
-        "Exploring custom assessment center methodologies in non-traditional environments and public administration sectors to evaluate core behavioral competencies.",
+        "A critical evaluation of structured behavioral interviewing techniques, discussing limitations in predicting executive performance and recommending simulation-based alternates.",
     },
     {
       date: "SEP 1999",
@@ -91,6 +75,22 @@ export default function InsightsClient() {
       category: "Competency Models",
       teaser:
         "A pioneer article outlining the psychological constructs of high-potential performers, and how organizations can identify and nurture fast-track leadership talent.",
+    },
+    {
+      date: "AUG 2026",
+      journal: "LinkedIn",
+      title: "Organizational Psychology through the lens of Quantum Mechanics in the era of AI",
+      category: "Future of Workforce",
+      teaser:
+        "Applying the lens of quantum mechanics to organizational psychology, reframing how we understand behavior, uncertainty, and change in the era of AI.",
+    },
+    {
+      date: "JAN 2005",
+      journal: "National HRD Network Newsletter",
+      title: "Assessment Centre: Beyond the Corporate Domain",
+      category: "Talent Assessments",
+      teaser:
+        "Exploring custom assessment center methodologies in non-traditional environments and public administration sectors to evaluate core behavioral competencies.",
     },
   ];
 
