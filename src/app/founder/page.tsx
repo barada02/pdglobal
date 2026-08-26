@@ -206,7 +206,7 @@ export default function FounderPage() {
               <Reveal as="div" className={styles.heroPortraitWrap}>
                 <div className={styles.heroPortraitFrame}>
                   <Image
-                    src="/founder-portrait.jpg"
+                    src="/founder_new.png"
                     alt="Dr. Himank Priyadarshi, Founder and CEO, Performance Dimensions Global"
                     fill
                     sizes="(max-width: 900px) 100vw, 420px"

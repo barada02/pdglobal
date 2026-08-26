@@ -120,7 +120,7 @@ export default function Home() {
               <Reveal className={styles.introLeft}>
                 <span className={styles.sectionEyebrow}>O U R &nbsp; M A N T R A</span>
                 <h2 className={styles.sectionTitle}>
-                  Our success depends on your success.
+                  Your Success is Our Success
                 </h2>
               </Reveal>
               <Reveal delay={120} className={styles.introRight}>

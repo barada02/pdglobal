@@ -153,7 +153,7 @@ export default function About() {
               <Reveal as="div" className={styles.bioLeft}>
                 <div className={styles.bioPhotoFrame}>
                   <Image
-                    src="/founder-portrait.jpg"
+                    src="/founder_new.png"
                     alt="Himank Priyadarshi, Ph.D. — Founder and CEO, Performance Dimensions Global"
                     fill
                     sizes="(max-width: 900px) 100vw, 380px"
