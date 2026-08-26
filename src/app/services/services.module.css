@@ -200,15 +200,50 @@
   font-weight: 500;
 }
 
+.panelTaglineList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.panelTaglineItem {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--primary);
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.panelTaglineItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  background: var(--primary);
+}
+
 .panelItemsGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.panelColumn {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
 
 @media (max-width: 800px) {
   .panelItemsGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .panelColumn {
     gap: 1rem;
   }
 }
