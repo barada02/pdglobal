@@ -27,8 +27,7 @@ export default function ServicesClient() {
       tagline: "Integrated, competency-based systems that connect Business strategy to people decisions and actions.",
       items: [
         "Competency Models — Techno-functional, Behavioral, Digital, Organizational",
-        "Behaviorally Anchored Rating Scales (BARS)",
-        "Integrated HRM: Talent acquisition, Performance, Learning, Succession",
+        "Behaviorally Anchored Rating Scales (BARS) Integrated HRM: Talent acquisition, Performance, Learning, Succession",
         "Skills-based Organization (SBO) and Skills frameworks & Ontology",
         "Job Architecture, Job & position analysis, Descriptions",
         "Talent Review and Calibration",
@@ -41,7 +40,7 @@ export default function ServicesClient() {
     },
     {
       id: "02",
-      title: "Talent & Leadership Assessment",
+      title: "Talent & Leadership Assessment - for Development and Selection",
       tagline: "Selection and developmental assessments — psychometrics, simulations, 360°, assessment centres.",
       items: [
         "Assessment / Development Centers — design and delivery",
