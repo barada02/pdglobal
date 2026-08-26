@@ -40,7 +40,7 @@ export default function ServicesClient() {
     },
     {
       id: "02",
-      title: "Talent & Leadership Assessment",
+      title: "Talent & Leadership Assessment - for Development and Selection",
       tagline: "Selection and developmental assessments — psychometrics, simulations, 360°, assessment centres.",
       items: [
         "Assessment / Development Centers — design and delivery",
